@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./tracks-page.component.css']
 })
 export class TracksPageComponent {
-
+  mockupSongs: Array<any> = [
+    {
+      name: 'BEBE (Oficial)'
+    },
+    {
+      name: 'BEBE (Oficial)'
+    },
+    {
+      name: 'BEBE (Oficial)'
+    }
+  ]
 }
