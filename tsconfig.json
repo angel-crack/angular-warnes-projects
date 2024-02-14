@@ -14,6 +14,9 @@
       "@shared/*" : [
         "src/app/shared/*"
       ],
+      "@data/*" : [
+        "./src/app/data/*"
+      ]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
