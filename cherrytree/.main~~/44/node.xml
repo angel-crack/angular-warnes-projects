@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-  <node name="20. Reactive Forms" unique_id="44" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1708700276" ts_lastsave="1708873136">
+  <node name="20. Reactive Forms" unique_id="44" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1708700276" ts_lastsave="1708705605">
     <rich_text>[+] Para poder crear un Formulario reactivo, primero debemos importar el formulario
 
 
@@ -137,17 +137,17 @@ auth/
     <rich_text>
 
 Para ir añadiendo validacions a cada uno de los inputs, lo que vamos a hacer es agregar un array de validators en la asignacion de los controles
-email</rich_text>
-    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
-    <rich_text> new FormControl</rich_text>
-    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+
+email: </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">new</rich_text>
+    <rich_text> FormControl(</rich_text>
     <rich_text foreground="#3ad900">''</rich_text>
     <rich_text>, [
-          Validators.required, ⇒ HERE
+          Validators.required, </rich_text>
+    <rich_text scale="h1">⇒ HERE</rich_text>
+    <rich_text>
           Validators.email
-        ]</rich_text>
-    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
-    <rich_text>,
+        ]),
 
 
 Read more ⇒ </rich_text>
@@ -181,6 +181,6 @@ Read more ⇒ </rich_text>
   
 </rich_text>
     <rich_text justification="left"></rich_text>
-    <encoded_png char_offset="3063" justification="left" link="" sha256sum="ca09818b5c3d45533d506f91ade0d1909559fde702c3094db3e770be9b71cccf"/>
+    <encoded_png char_offset="3064" justification="left" link="" sha256sum="ca09818b5c3d45533d506f91ade0d1909559fde702c3094db3e770be9b71cccf"/>
   </node>
 </cherrytree>

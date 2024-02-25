@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="21. Services" unique_id="45" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1708871442" ts_lastsave="1708881976">
+    <rich_text>[+] Servicios
+
+En un servicio vamos a agrupar unos metodos que tengan un uso practico
+
+
+ng g s modules/auth/services/Auth                                                                                                                                                             ─╯
+CREATE src/app/modules/auth/services/auth.service.spec.ts (347 bytes)
+CREATE src/app/modules/auth/services/auth.service.ts (133 bytes)
+
+
+
+
+auth/
+┣ pages/
+┃ ┗ login-page/
+┃   ┣ login-page.component.css
+┃   ┣ login-page.component.html
+┃   ┣ login-page.component.spec.ts
+┃   ┗ login-page.component.ts
+┣ services/
+┃ ┣ auth.service.spec.ts
+┃ ┗ auth.service.ts
+
+	import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> Injectable </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@angular/core'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+
+	@Injectable</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">({</rich_text>
+    <rich_text>
+	  providedIn</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#3ad900">'root'</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">})</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">export</rich_text>
+    <rich_text> class AuthService </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+
+	  </rich_text>
+    <rich_text foreground="#ffdd00">constructor()</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+
+	  sendCredentials</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>email</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> string , password</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> string</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">):</rich_text>
+    <rich_text> void</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+		console.log</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text foreground="#3ad900">'its working the service'</rich_text>
+    <rich_text>,email,password</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>
+	  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+
+	</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+	
+	
+Hemos creado un metodo sendCredentials en el servicio al que le pasaremos un email y un pass
+
+┣ auth-routing.module.ts
+┗ auth.module.ts
+
+[+] Cabe resaltar que cuando enviabamos los email y password al form lo haciamos desde el componente como podemos observar
+
+
+
+
+Si modificamos el componente de la siguiente manera podemos ver como se manda desde el auth.service
+
+
+	constructor</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>private </rich_text>
+    <rich_text background="#ffff78780000">authService</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> AuthService</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{}</rich_text>
+    <rich_text> ⇒ En el constructor asiganamos un alias e importamos el servicio
+
+	  </rich_text>
+    <rich_text foreground="#ffdd00">sendLogin()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> void </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+		const </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>email, password</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> = this.formLogin.value</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text background="#ffff78780000">this.authService.sendCredentials</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>email,password</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> ⇒ Y llamamos al metodo aqui
+	  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+
+
+
+
+
+=====================
+
+[+] </rich_text>
+    <encoded_png char_offset="1165" justification="left" link="" sha256sum="1542aac4c9ddd8031ae7a2555ad2c7b1cb591b81399f49d537adc33de18484d2"/>
+    <encoded_png char_offset="1546" justification="left" link="" sha256sum="8716bd994dfde43a44a7a1d9e8c2f10459f866ac6486230a6f6c7b274e3d77cb"/>
+  </node>
+</cherrytree>
