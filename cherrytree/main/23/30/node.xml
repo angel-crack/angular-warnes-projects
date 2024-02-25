@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="07. Lazy Loading" unique_id="30" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1707171016" ts_lastsave="1707765907">
+    <rich_text>	</rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Por defecto Angular carga todos los modulos cuando la app se carga, para esto el Lazy Loading ayuda a que el bundle size sea lo mas pequeño posible</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text link="webs https://angular.dev/guide/ngmodules/lazy-loading">https://angular.dev/guide/ngmodules/lazy-loading</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h3">By default, NgModules are eagerly loaded. This means that as soon as the application loads, so do all the NgModules, whether they are immediately necessary or not. For large applications with lots of routes, consider lazy loading —a design pattern that loads NgModules as needed. Lazy loading helps keep initial bundle sizes smaller, which in turn helps decrease load times.</rich_text>
+    <rich_text>
+
+[+] Ahora lo que vamos a hacer es que en la app-routing principal del componente mas padre:
+
+app/
+┣ core/
+┣ data/
+┣ modules/
+┣ shared/
+┣ </rich_text>
+    <rich_text background="#f9f9f0f06b6b" foreground="#5e5e5c5c6464">app-routing.module.ts</rich_text>
+    <rich_text>
+┣ app.component.css
+┣ app.component.html
+┣ app.component.spec.ts
+┣ app.component.ts
+┗ app.module.ts
+
+Vamos a cargar el modulo en como LoadChildren, y esto nos va a devolver una promesa, se escribe:
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+
+
+	1. Hacemos la peticion a ⇒ </rich_text>
+    <rich_text foreground="#f92672">import</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text foreground="#e6db74">'./modules/home/home.module'</rich_text>
+    <rich_text foreground="#f8f8f2">)</rich_text>
+    <rich_text>
+	2. Una vez que esté la devolvemos ⇒ .</rich_text>
+    <rich_text foreground="#a6e22e">then</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text style="italic" foreground="#fd971f">m</rich_text>
+    <rich_text style="italic" foreground="#66d9ef">=&gt;</rich_text>
+    <rich_text style="italic" foreground="#fd971f">m</rich_text>
+    <rich_text foreground="#f8f8f2">.</rich_text>
+    <rich_text underline="single" foreground="#a6e22e">HomeModule</rich_text>
+    <rich_text foreground="#f8f8f2">)</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Generamos un componente en home:</rich_text>
+    <rich_text>
+
+17:55:50 &gt; ng g c modules/home/pages/HomePage
+CREATE src/app/modules/home/pages/home-page/home-page.component.html (24 bytes)
+CREATE src/app/modules/home/pages/home-page/home-page.component.spec.ts (574 bytes)
+CREATE src/app/modules/home/pages/home-page/home-page.component.ts (213 bytes)
+CREATE src/app/modules/home/pages/home-page/home-page.component.css (0 bytes)
+UPDATE src/app/modules/home/home.module.ts (372 bytes)
+
+modules/
+┣ home/
+┃ ┣ pages/
+┃ ┃ ┗ home-page/
+┃ ┃   ┣ home-page.component.css
+┃ ┃   ┣ home-page.component.html
+┃ ┃   ┣ home-page.component.spec.ts
+┃ ┃   ┗ home-page.component.ts
+
+
+</rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Es importante que en el modulo a cargar, en este caso ‘HomeModule' en la ruta carguemos el componente</rich_text>
+    <rich_text>
+
+[+] En las rutas ponemos:
+
+app/
+┣ core/
+┣ data/
+┃ ┗ tracks.json
+┣ modules/
+┃ ┣ auth/
+┃ ┃ ┣ auth-routing.module.ts
+┃ ┃ ┗ auth.module.ts
+┃ ┣ history/
+┃ ┃ ┣ history-routing.module.ts
+┃ ┃ ┗ history.module.ts
+┃ ┣ home/
+┃ ┃ ┣</rich_text>
+    <rich_text background="#f9f9f0f06b6b" foreground="#5e5e5c5c6464"> home-routing.module.ts</rich_text>
+    <rich_text>
+
+		</rich_text>
+    <rich_text style="italic" foreground="#66d9ef">const</rich_text>
+    <rich_text foreground="#f8f8f2"> routes</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">Routes</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#f92672">=</rich_text>
+    <rich_text foreground="#f8f8f2"> [</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text foreground="#f8f8f2">  {</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text foreground="#f8f8f2">    path: </rich_text>
+    <rich_text foreground="#e6db74">'dashboard'</rich_text>
+    <rich_text foreground="#f8f8f2">,</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">component</rich_text>
+    <rich_text foreground="#f8f8f2">: </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">HomePageComponent</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text foreground="#f8f8f2">  }</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text foreground="#f8f8f2">];</rich_text>
+    <rich_text>
+		
+┃ ┃ ┗ home.module.ts
+
+
+
+</rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Notice:</rich_text>
+    <rich_text>
+
+En la ruta raiz del proyeto:
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+
+Pero si nos vamos a ⇒ home/dashboard
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+
+</rich_text>
+    <codebox char_offset="938" justification="left" frame_width="838" frame_height="100" width_in_pixels="1" syntax_highlighting="ts" highlight_brackets="1" show_line_numbers="0">const routes: Routes = [
+  {
+    path: 'home',
+    loadChildren: () =&gt; import('./modules/home/home.module').then(m=&gt;m.HomeModule)
+  }
+];</codebox>
+    <encoded_png char_offset="2233" justification="left" link="" sha256sum="4765233de00fa108c55fdf30f86e5ecf53709df0df5e5f6ba3daeb2ffd85e7a6"/>
+    <encoded_png char_offset="2274" justification="left" link="" sha256sum="664c05857837950d5a9e8ab783586599958c14fe00dfba4bc8fbfca274ff9904"/>
+  </node>
+</cherrytree>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="02. Añadiendo Recursos" unique_id="25" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1707060143" ts_lastsave="1707760698">
+    <rich_text background="#ffffffffffff" foreground="#5e5e5c5c6464" weight="heavy">[+] Añadir IconScout al proyecto</rich_text>
+    <rich_text>
+
+Si vamos a: </rich_text>
+    <rich_text link="webs https://iconscout.com/unicons/getting-started/line">https://iconscout.com/unicons/getting-started/line</rich_text>
+    <rich_text>
+
+Y seleccionamos line:
+
+</rich_text>
+    <rich_text justification="left" scale="h3">&lt;link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"&gt;</rich_text>
+    <rich_text>
+
+Tambien copiamos de </rich_text>
+    <rich_text link="webs https://fonts.google.com/specimen/Poppins">https://fonts.google.com/specimen/Poppins</rich_text>
+    <rich_text>
+
+&lt;link rel="preconnect" href="</rich_text>
+    <rich_text link="webs https://fonts.googleapis.com">https://fonts.googleapis.com</rich_text>
+    <rich_text>"&gt;
+&lt;link rel="preconnect" href="</rich_text>
+    <rich_text link="webs https://fonts.gstatic.com">https://fonts.gstatic.com</rich_text>
+    <rich_text>" crossorigin&gt;
+&lt;link href="</rich_text>
+    <rich_text link="webs https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap">https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap</rich_text>
+    <rich_text>" rel="stylesheet"&gt;
+
+Lo pegamos en el </rich_text>
+    <rich_text weight="heavy">index.html</rich_text>
+    <rich_text>
+
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>project-a/
+┣ .angular/
+┣ .vscode/
+┣ node_modules/
+┣ src/
+	┣ app/
+	┣ assets/
+	┣ favicon.ico
+	</rich_text>
+    <rich_text background="#f8f8e4e45c5c" foreground="#3d3d38384646" weight="heavy">┣ index.html</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;!</rich_text>
+    <rich_text foreground="#f92672">doctype</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">html</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;</rich_text>
+    <rich_text foreground="#f92672">html</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">lang</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"en"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;</rich_text>
+    <rich_text foreground="#f92672">head</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">  &lt;</rich_text>
+    <rich_text foreground="#f92672">meta</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">charset</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"utf-8"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">  &lt;</rich_text>
+    <rich_text foreground="#f92672">title</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;ProjectA&lt;/</rich_text>
+    <rich_text foreground="#f92672">title</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">  &lt;</rich_text>
+    <rich_text foreground="#f92672">base</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">href</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"/"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">  &lt;</rich_text>
+    <rich_text foreground="#f92672">meta</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">name</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"viewport"</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">content</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"width=device-width, initial-scale=1"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">  &lt;</rich_text>
+    <rich_text foreground="#f92672">link</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">rel</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"icon"</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">type</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"image/x-icon"</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">href</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"favicon.ico"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text background="#eded33333b3b" foreground="#ffffffffffff">⇒ </rich_text>
+    <rich_text background="#eded33333b3b" foreground="#ffffffffffff" weight="heavy">HERE</rich_text>
+    <rich_text>	</rich_text>
+    <rich_text foreground="#f8f8f2">  &lt;</rich_text>
+    <rich_text foreground="#f92672">link</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">rel</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"stylesheet"</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">href</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"https://unicons.iconscout.com/release/v4.0.8/css/line.css"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text background="#eded33333b3b" foreground="#ffffffffffff">⇒ </rich_text>
+    <rich_text background="#eded33333b3b" foreground="#ffffffffffff" weight="heavy">HERE</rich_text>
+    <rich_text>    </rich_text>
+    <rich_text foreground="#f8f8f2">&lt;</rich_text>
+    <rich_text foreground="#f92672">link</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">rel</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"preconnect"</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">href</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"https://fonts.googleapis.com"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text background="#eded33333b3b" foreground="#ffffffffffff">⇒ </rich_text>
+    <rich_text background="#eded33333b3b" foreground="#ffffffffffff" weight="heavy">HERE</rich_text>
+    <rich_text>  </rich_text>
+    <rich_text foreground="#f8f8f2">  &lt;</rich_text>
+    <rich_text foreground="#f92672">link</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">rel</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"preconnect"</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">href</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"https://fonts.gstatic.com"</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">crossorigin</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text background="#eded33333b3b" foreground="#ffffffffffff">⇒ </rich_text>
+    <rich_text background="#eded33333b3b" foreground="#ffffffffffff" weight="heavy">HERE</rich_text>
+    <rich_text>  </rich_text>
+    <rich_text foreground="#f8f8f2">  &lt;</rich_text>
+    <rich_text foreground="#f92672">link</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">href</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap"</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">rel</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"stylesheet"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;/</rich_text>
+    <rich_text foreground="#f92672">head</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;</rich_text>
+    <rich_text foreground="#f92672">body</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">  &lt;</rich_text>
+    <rich_text foreground="#f92672">app-root</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;&lt;/</rich_text>
+    <rich_text foreground="#f92672">app-root</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;/</rich_text>
+    <rich_text foreground="#f92672">body</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+			</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;/</rich_text>
+    <rich_text foreground="#f92672">html</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+
+	┣ main.ts
+┗ styles.css
+┣ .editorconfig
+┣ .gitignore
+┣ angular.json
+┣ package-lock.json
+┣ package.json
+┣ README.md
+┣ tsconfig.app.json
+┣ tsconfig.json
+┗ tsconfig.spec.json
+
+</rich_text>
+    <rich_text background="#ffffffffffff" foreground="#5e5e5c5c6464" weight="heavy">[+] Sobre el index.html</rich_text>
+    <rich_text>
+
+Es el archivo general. Es el padre de todos
+
+</rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Tambien podemos añadir unos Estilos Globales</rich_text>
+    <rich_text>
+
+project-a/
+┣ .angular/
+┣ .vscode/
+┣ node_modules/
+┣ src/
+	┣ app/
+	┣ assets/
+	┣ favicon.ico
+	┣ index.html
+	┣ main.ts
+</rich_text>
+    <rich_text background="#f8f8e4e45c5c" foreground="#3d3d38384646" weight="heavy">┗ styles.css</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#a6e22e">:root</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --color-1: </rich_text>
+    <rich_text foreground="#ae81ff">#1DB954</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --color-2: </rich_text>
+    <rich_text foreground="#ae81ff">#323232</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --color-3: </rich_text>
+    <rich_text foreground="#ae81ff">#000000</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --color-4: </rich_text>
+    <rich_text foreground="#ae81ff">#FFFFFF</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --color-5: </rich_text>
+    <rich_text foreground="#ae81ff">#181818</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --font-size-1: </rich_text>
+    <rich_text foreground="#ae81ff">1</rich_text>
+    <rich_text foreground="#f92672">rem</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --font-size-2: </rich_text>
+    <rich_text foreground="#ae81ff">1.2</rich_text>
+    <rich_text foreground="#f92672">rem</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --font-size-3: </rich_text>
+    <rich_text foreground="#ae81ff">1.8</rich_text>
+    <rich_text foreground="#f92672">rem</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --shadow-1: </rich_text>
+    <rich_text foreground="#66d9ef">rgb</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text foreground="#ae81ff">0</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#ae81ff">0</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#ae81ff">0</rich_text>
+    <rich_text foreground="#f8f8f2"> / </rich_text>
+    <rich_text foreground="#ae81ff">35</rich_text>
+    <rich_text foreground="#f92672">%</rich_text>
+    <rich_text foreground="#f8f8f2">) </rich_text>
+    <rich_text foreground="#ae81ff">0</rich_text>
+    <rich_text foreground="#f92672">px</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#ae81ff">8</rich_text>
+    <rich_text foreground="#f92672">px</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#ae81ff">24</rich_text>
+    <rich_text foreground="#f92672">px</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --shadow-2: </rich_text>
+    <rich_text foreground="#66d9ef">rgba</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text foreground="#ae81ff">100</rich_text>
+    <rich_text foreground="#f8f8f2">, </rich_text>
+    <rich_text foreground="#ae81ff">100</rich_text>
+    <rich_text foreground="#f8f8f2">, </rich_text>
+    <rich_text foreground="#ae81ff">111</rich_text>
+    <rich_text foreground="#f8f8f2">, </rich_text>
+    <rich_text foreground="#ae81ff">0.2</rich_text>
+    <rich_text foreground="#f8f8f2">) </rich_text>
+    <rich_text foreground="#ae81ff">0</rich_text>
+    <rich_text foreground="#f92672">px</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#ae81ff">7</rich_text>
+    <rich_text foreground="#f92672">px</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#ae81ff">29</rich_text>
+    <rich_text foreground="#f92672">px</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#ae81ff">0</rich_text>
+    <rich_text foreground="#f92672">px</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --border-radius-1: </rich_text>
+    <rich_text foreground="#ae81ff">.25</rich_text>
+    <rich_text foreground="#f92672">rem</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --border-radius-2: </rich_text>
+    <rich_text foreground="#ae81ff">.5</rich_text>
+    <rich_text foreground="#f92672">rem</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --font-family-1: </rich_text>
+    <rich_text foreground="#e6db74">'Poppins'</rich_text>
+    <rich_text foreground="#f8f8f2">, </rich_text>
+    <rich_text foreground="#66d9ef">sans-serif</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    --animation-1: </rich_text>
+    <rich_text foreground="#ae81ff">200</rich_text>
+    <rich_text foreground="#f92672">ms</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">}</rich_text>
+    <rich_text>
+
+	</rich_text>
+    <rich_text foreground="#f92672">html</rich_text>
+    <rich_text foreground="#f8f8f2">,</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f92672">body</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">margin</rich_text>
+    <rich_text foreground="#f8f8f2">: </rich_text>
+    <rich_text foreground="#ae81ff">0</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">padding</rich_text>
+    <rich_text foreground="#f8f8f2">: </rich_text>
+    <rich_text foreground="#ae81ff">0</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">background-color</rich_text>
+    <rich_text foreground="#f8f8f2">: </rich_text>
+    <rich_text foreground="#66d9ef">var</rich_text>
+    <rich_text foreground="#f8f8f2">(--color-3);</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">font-family</rich_text>
+    <rich_text foreground="#f8f8f2">: </rich_text>
+    <rich_text foreground="#66d9ef">var</rich_text>
+    <rich_text foreground="#f8f8f2">(--font-family-1);</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">font-size</rich_text>
+    <rich_text foreground="#f8f8f2">: </rich_text>
+    <rich_text foreground="#66d9ef">var</rich_text>
+    <rich_text foreground="#f8f8f2">(--font-size-1);</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">color</rich_text>
+    <rich_text foreground="#f8f8f2">: </rich_text>
+    <rich_text foreground="#66d9ef">var</rich_text>
+    <rich_text foreground="#f8f8f2">(--color-4);</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">}</rich_text>
+    <rich_text>
+
+	</rich_text>
+    <rich_text foreground="#f92672">input</rich_text>
+    <rich_text foreground="#f8f8f2">,</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f92672">button</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">cursor</rich_text>
+    <rich_text foreground="#f8f8f2">: </rich_text>
+    <rich_text foreground="#66d9ef">pointer</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">font-family</rich_text>
+    <rich_text foreground="#f8f8f2">: </rich_text>
+    <rich_text foreground="#66d9ef">var</rich_text>
+    <rich_text foreground="#f8f8f2">(--font-family-1);</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">}</rich_text>
+    <rich_text>
+
+	</rich_text>
+    <rich_text foreground="#f92672">button</rich_text>
+    <rich_text foreground="#a6e22e">:disabled</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">opacity</rich_text>
+    <rich_text foreground="#f8f8f2">: </rich_text>
+    <rich_text foreground="#ae81ff">.5</rich_text>
+    <rich_text foreground="#f8f8f2">;</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#f8f8f2">}</rich_text>
+    <rich_text>
+
+</rich_text>
+    <encoded_png char_offset="544" justification="left" anchor="recursos"/>
+  </node>
+</cherrytree>

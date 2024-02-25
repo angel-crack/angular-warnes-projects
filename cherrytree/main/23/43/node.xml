@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="NOTES" unique_id="43" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="11" is_bold="0" foreground="" ts_creation="1707069978" ts_lastsave="1708701027">
+    <rich_text>[+] Check ionic:
+</rich_text>
+    <rich_text link="webs https://ionicframework.com/docs/">https://ionicframework.com/docs/</rich_text>
+    <rich_text>
+
+[+] repasar bastante el tema de pipes
+
+[+] Eventos de los atributos HTML
+</rich_text>
+    <rich_text link="webs https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/error_event">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/error_event</rich_text>
+    <rich_text>
+
+[+] Validators de angular
+
+</rich_text>
+    <rich_text link="webs https://angular.io/api/forms/Validators">https://angular.io/api/forms/Validators</rich_text>
+  </node>
+</cherrytree>

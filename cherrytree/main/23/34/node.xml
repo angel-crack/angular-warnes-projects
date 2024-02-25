@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="11. ng-container/template" unique_id="34" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1707339385" ts_lastsave="1707344599">
+    <rich_text>Es basicamente una manera de tener mas organizado el trabajo
+
+</rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Si nos vamos a media-player component</rich_text>
+    <rich_text>
+
+shared/
+┣ components/
+┃ ┣ media-player/
+┃ ┃ ┣ media-player.component.css
+┃ ┃ ┣ </rich_text>
+    <rich_text background="#e0e01b1b2424">media-player.component.html</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;</rich_text>
+    <rich_text foreground="#f92672">div</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">class</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"media-player"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    &lt;</rich_text>
+    <rich_text foreground="#f92672">div</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">class</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"media-player--wrapper "</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">        </rich_text>
+    <rich_text foreground="#88846f">&lt;!--Zona del artista--&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">        &lt;</rich_text>
+    <rich_text foreground="#f92672">div</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">class</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"artist player-center"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">            &lt;</rich_text>
+    <rich_text foreground="#f92672">ng-container</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">*ngTemplateOutlet</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"</rich_text>
+    <rich_text background="#81813d3d9c9c" foreground="#f8f8f2">artistZone</rich_text>
+    <rich_text foreground="#e6db74">"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;&lt;/</rich_text>
+    <rich_text foreground="#f92672">ng-container</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text> </rich_text>
+    <rich_text background="#e0e01b1b2424">[+] ⇐ will be inserted here</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">        &lt;/</rich_text>
+    <rich_text foreground="#f92672">div</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    &lt;/</rich_text>
+    <rich_text foreground="#f92672">div</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;/</rich_text>
+    <rich_text foreground="#f92672">div</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;</rich_text>
+    <rich_text foreground="#f92672">ng-template</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">#</rich_text>
+    <rich_text background="#81813d3d9c9c" foreground="#a6e22e">artistZone</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text background="#e0e01b1b2424">[+] ⇐ WHAT EVER HERE </rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;/</rich_text>
+    <rich_text foreground="#f92672">ng-template</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+
+
+
+┃ ┃ ┣ media-player.component.spec.ts
+┃ ┃ ┗ media-player.component.ts
+┗ shared.module.ts</rich_text>
+  </node>
+</cherrytree>
