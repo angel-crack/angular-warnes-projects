@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-  <node name="21. Services" unique_id="45" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1708871442" ts_lastsave="1708898329">
+  <node name="21. Services" unique_id="45" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1708871442" ts_lastsave="1708885750">
     <rich_text>[+] Servicios
 
 En un servicio vamos a agrupar unos metodos que tengan un uso practico
@@ -301,8 +301,6 @@ constructor</rich_text>
 
 [+] Como cada evento de subcripcion genera un proceso en la memoria al momento de escalarse se puede convertir en un problema, por lo que vamos a desubscribirnos cuando el componente sea destruido, se hace de la siguiente manera:
 
-
-
    constructor</rich_text>
     <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
     <rich_text>private multimediaService</rich_text>
@@ -316,9 +314,7 @@ constructor</rich_text>
     <rich_text foreground="#ffdd00">&lt;</rich_text>
     <rich_text>Subscription&gt; = []</rich_text>
     <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
-    <rich_text> ⇒ </rich_text>
-    <rich_text background="#e0e01b1b2424">Creando lista aquí</rich_text>
-    <rich_text>
+    <rich_text> ⇒ Creando lista aquí
   </rich_text>
     <rich_text foreground="#ffdd00">ngOnInit()</rich_text>
     <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
@@ -351,9 +347,7 @@ constructor</rich_text>
     </rich_text>
     <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
     <rich_text>
-    this.listObservers = [observer1$] ⇒ </rich_text>
-    <rich_text background="#e0e01b1b2424">Asignandola aqui</rich_text>
-    <rich_text>
+    this.listObservers = [observer1$]
   </rich_text>
     <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
     <rich_text>
@@ -373,10 +367,6 @@ constructor</rich_text>
     <rich_text>
   </rich_text>
     <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
-    <rich_text>
-  
-  
-  </rich_text>
     <encoded_png char_offset="1165" justification="left" link="" sha256sum="1542aac4c9ddd8031ae7a2555ad2c7b1cb591b81399f49d537adc33de18484d2"/>
     <encoded_png char_offset="1546" justification="left" link="" sha256sum="8716bd994dfde43a44a7a1d9e8c2f10459f866ac6486230a6f6c7b274e3d77cb"/>
     <encoded_png char_offset="1694" justification="left" link="" sha256sum="9afe9a3e6e638a34a92aaa32da528a76646dc207740444c903e4d0cc9c0ea145"/>

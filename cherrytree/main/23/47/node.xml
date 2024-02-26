@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="23. API" unique_id="47" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1708905354" ts_lastsave="1708921054">
+    <rich_text>[+] Importamos del repositorio una api ya lista para consumir
+
+git clone </rich_text>
+    <rich_text link="webs https://github.com/leifermendez/node-api-tracks.git">https://github.com/leifermendez/node-api-tracks.git</rich_text>
+    <rich_text>
+
+[+] Corremos:
+
+npm install
+
+node app.js
+
+[+] Ya podriamos correr la siguiente ruta
+
+</rich_text>
+    <rich_text link="webs http://localhost:3000/api/1.0/tracks">http://localhost:3000/api/1.0/tracks</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+
+[+] Partimos de lo siguiente, borrando lo que hicimos en 22.rxjs
+
+
+tracks/
+┣ pages/
+┃ ┗ tracks-page/
+┃   ┣ tracks-page.component.css
+┃   ┣ tracks-page.component.html
+┃   ┣ tracks-page.component.spec.ts
+┃   ┗ </rich_text>
+    <rich_text background="#3333d1d17a7a">tracks-page.component.ts</rich_text>
+    <rich_text>
+
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> Component, OnDestroy, OnInit </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@angular/core'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> TrackModel </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@core/models/track.models'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> TrackService </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@modules/tracks/services/track.service'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> Subscription </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'rxjs'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+
+		@Component</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">({</rich_text>
+    <rich_text>
+		  selector</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#3ad900">'app-tracks-page'</rich_text>
+    <rich_text>,
+		  templateUrl</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#3ad900">'./tracks-page.component.html'</rich_text>
+    <rich_text>,
+		  styleUrls</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> [</rich_text>
+    <rich_text foreground="#3ad900">'./tracks-page.component.css'</rich_text>
+    <rich_text>]
+		</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">})</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">export</rich_text>
+    <rich_text> class TracksPageComponent implements OnInit, OnDestroy</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+		  tracksTrending</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>TrackModel&gt; = []
+		  tracksRandom</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>TrackModel&gt; = []
+		  
+		  listObservers$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>Subscription&gt; = []
+
+		  </rich_text>
+    <rich_text foreground="#ffdd00">ngOnInit()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> void </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+		  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+		  
+		  </rich_text>
+    <rich_text foreground="#ffdd00">ngOnDestroy()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> void </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+			this.listObservers$.forEach</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text> u =&gt; u.</rich_text>
+    <rich_text foreground="#ffdd00">unsubscribe()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>
+		  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+		  constructor</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>private trackService</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text>TrackService</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{}</rich_text>
+    <rich_text>
+
+		</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+
+┣ services/
+┃ ┣ track.service.spec.ts
+┃ ┗ </rich_text>
+    <rich_text background="#e0e01b1b2424">track.service.ts</rich_text>
+    <rich_text>
+
+
+
+[+] Importamos la libreria de HTTP en el app module
+
+import { HttpClientModule } from '@angular/common/http'; </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ Esta linea</rich_text>
+    <rich_text>
+
+
+@NgModule({
+  declarations: [
+    TracksPageComponent
+  ],
+  imports: [
+    CommonModule,
+    TracksRoutingModule,
+    SharedModule,
+    HttpClientModule </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ Y esta linea</rich_text>
+    <rich_text>
+  ]
+})
+export class TracksModule { }
+
+
+[+] Vamos a irnos a los archivos env de angular y vamos a declarar la API ahí, en el de desarrollo, NO EN EL DE PRODUCCION (PROD)
+
+Si no tenemos los enviroments, lo creamos
+
+ng generate environments
+
+src/
+┣ app/
+┣ assets/
+┣environments/
+	┣ environment.development.ts
+		export const environment = {
+			production: 'false',
+			api: '</rich_text>
+    <rich_text link="webs http://localhost:3000/api/1.0'">http://localhost:3000/api/1.0'</rich_text>
+    <rich_text>
+		};
+	┗ environment.ts
+		export const environment = {
+			production: 'true',
+			api: '</rich_text>
+    <rich_text link="webs http://localhost:3000/api/1.0'">http://localhost:3000/api/1.0'</rich_text>
+    <rich_text>
+		};
+┣ favicon.ico
+┣ index.html
+┣ main.ts
+┗ styles.css
+
+
+Y en el servicio de tracks podemos hacer lo suigiente:
+
+import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> HttpClient </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@angular/common/http'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> Injectable </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@angular/core'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> Observable, of </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'rxjs'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> environment </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'src/environments/environment.development'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+
+
+@Injectable</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">({</rich_text>
+    <rich_text>
+  providedIn</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#3ad900">'root'</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">})</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">export</rich_text>
+    <rich_text> class TrackService </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+
+  private </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">readonly</rich_text>
+    <rich_text> URL = environment.api </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ Desde el enviroment de desarollo</rich_text>
+    <rich_text>
+
+  constructor</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>private http</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> HttpClient</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{}</rich_text>
+    <rich_text> </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ Importamos el servicio de HttpClient</rich_text>
+    <rich_text>
+
+  getAllTracks$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">():</rich_text>
+    <rich_text> Observable</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>any&gt; </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+    </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">return</rich_text>
+    <rich_text> this.http.get</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>`${this.URL}/tracks`</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ Aqui hacemos la peticion</rich_text>
+    <rich_text>
+  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+
+
+[+] Esa data que estamos pidiendo viene de la siguiente forma:
+
+En el NgOnInit del tracks page component:
+
+
+  </rich_text>
+    <rich_text foreground="#ffdd00">ngOnInit()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> void </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+    this.trackService.getAllTracks$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">()</rich_text>
+    <rich_text>.subscribe</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>
+      </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>response</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> =&gt; </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+        console.log</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>response</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ Vemos la respuesta</rich_text>
+    <rich_text>
+        
+		        
+        
+      </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+    </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>
+  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+  
+Este es un objeto que viene con data cruda pero nosotros queremos que sea una lista de TracksModel, por lo tanto a esa data que estamos obteniendo podeemos hacerle transformaciones haciendo uso de pipes:
+
+
+
+
+Y vamos a usar este ⇒ </rich_text>
+    <rich_text link="webs https://www.learnrxjs.io/learn-rxjs/operators/transformation/map">https://www.learnrxjs.io/learn-rxjs/operators/transformation/map</rich_text>
+    <rich_text>
+
+
+  getAllTracks$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">():</rich_text>
+    <rich_text> Observable</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>any&gt; </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+    </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">return</rich_text>
+    <rich_text> this.http.get</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>`${this.URL}/tracks`</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>.pipe</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>
+      map</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>
+        </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">({</rich_text>
+    <rich_text>data</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}:</rich_text>
+    <rich_text>any</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> =&gt; </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+          </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">return</rich_text>
+    <rich_text> data
+        </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+      </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>
+    </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>
+  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+  
+ 
+ 
+ De esta manera ya solo queda hacer uso del servicio desde el tracksPage component:
+ 
+ </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">export</rich_text>
+    <rich_text> class TracksPageComponent implements OnInit, OnDestroy</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+  tracksTrending</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>TrackModel&gt; = []
+  tracksRandom</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>TrackModel&gt; = []
+  
+  listObservers$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>Subscription&gt; = []
+
+  </rich_text>
+    <rich_text foreground="#ffdd00">ngOnInit()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> void </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+    const observer1$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text>Subscription = this.trackService.getAllTracks$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">()</rich_text>
+    <rich_text>.subscribe</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>
+      </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>response</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> TrackModel[]</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> =&gt; </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+        console.log</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>response</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>
+        this.tracksTrending = response
+      </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+    </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>
+
+    const observer2$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text>Subscription = this.trackService.getAllRandom$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">()</rich_text>
+    <rich_text>.subscribe</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>
+      </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>response</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> TrackModel[]</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> =&gt; </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+        this.tracksRandom = response
+      </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+    </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>
+
+    this.listObservers$ = [observer1$,observer2$]
+  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+  
+  </rich_text>
+    <rich_text foreground="#ffdd00">ngOnDestroy()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> void </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+    this.listObservers$.forEach</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text> u =&gt; u.</rich_text>
+    <rich_text foreground="#ffdd00">unsubscribe()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>
+  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+  constructor</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>private trackService</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text>TrackService</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{}</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+
+
+
+
+
+</rich_text>
+    <encoded_png char_offset="248" justification="left" link="" sha256sum="6602ad75d8da2742d22012ebd66161a88c7f7622d9503a97467a22cef2de99e3"/>
+    <encoded_png char_offset="3053" justification="left" link="" sha256sum="3987d48f90e3332934f8163db97e79905b4507daf2e89976cdd4a8fc1e2112ed"/>
+    <encoded_png char_offset="3298" justification="left" link="" sha256sum="5d77ec19a1c254ff7d20d89f740a53403ddc74f76331b821433bba12fde6a600"/>
+  </node>
+</cherrytree>

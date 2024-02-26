@@ -15,7 +15,14 @@ export class LoginPageComponent implements OnInit {
 
   sendLogin(): void {
     const {email, password} = this.formLogin.value;
-    this.authService.sendCredentials(email,password)
+    this.authService.sendCredentials(email,password).subscribe(
+      response => {
+        console.log(response)
+      },
+      err => {
+        console.log(err)
+      }
+    )
   }
 
   ngOnInit(): void {

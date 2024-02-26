@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="22. rxjs" unique_id="46" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1708898342" ts_lastsave="1708904227">
+    <rich_text>[+] Vamos a crear una carpeta servicio para tracks
+
+tracks/
+┣ pages/
+┃ ┗ tracks-page/
+┃   ┣ tracks-page.component.css
+┃   ┣ tracks-page.component.html
+┃   ┣ tracks-page.component.spec.ts
+┃   ┗ </rich_text>
+    <rich_text background="#3333d1d17a7a">tracks-page.component.ts</rich_text>
+    <rich_text>
+
+	import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> Component, OnInit </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@angular/core'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+	import * as dataRaw from </rich_text>
+    <rich_text foreground="#3ad900">'../../../../data/tracks.json'</rich_text>
+    <rich_text> ⇒ </rich_text>
+    <rich_text weight="heavy">Actualmente estamos importando la informacion de manera estatica</rich_text>
+    <rich_text>
+	
+</rich_text>
+    <rich_text weight="heavy">	Esta linea de arriba la vamos a suprimir, para quitar la dependencia de este componente con un file</rich_text>
+    <rich_text>
+	
+	import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> TrackModel </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@core/models/track.models'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+
+	@Component</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">({</rich_text>
+    <rich_text>
+	  selector</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#3ad900">'app-tracks-page'</rich_text>
+    <rich_text>,
+	  templateUrl</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#3ad900">'./tracks-page.component.html'</rich_text>
+    <rich_text>,
+	  styleUrls</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> [</rich_text>
+    <rich_text foreground="#3ad900">'./tracks-page.component.css'</rich_text>
+    <rich_text>]
+	</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">})</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">export</rich_text>
+    <rich_text> class TracksPageComponent implements OnInit</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+	  mockupSongs</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>TrackModel&gt; = [
+	  ]
+
+	  </rich_text>
+    <rich_text foreground="#ffdd00">ngOnInit()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> void </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+		const </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>data</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}:</rich_text>
+    <rich_text> any = </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>dataRaw as any</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>.default </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ HERE</rich_text>
+    <rich_text>
+		this.mockupSongs = data </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ HERE</rich_text>
+    <rich_text>
+		
+		</rich_text>
+    <rich_text weight="heavy">Esas dos lineas las vamos a suprimir tambien</rich_text>
+    <rich_text>		
+		
+			
+		
+	  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+	
+	
+	======================================================
+	
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> Component, OnDestroy, OnInit </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@angular/core'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> TrackModel </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@core/models/track.models'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> TrackService </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@modules/tracks/services/track.service'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> Subscription </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'rxjs'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+
+		@Component</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">({</rich_text>
+    <rich_text>
+		  selector</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#3ad900">'app-tracks-page'</rich_text>
+    <rich_text>,
+		  templateUrl</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#3ad900">'./tracks-page.component.html'</rich_text>
+    <rich_text>,
+		  styleUrls</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> [</rich_text>
+    <rich_text foreground="#3ad900">'./tracks-page.component.css'</rich_text>
+    <rich_text>]
+		</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">})</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">export</rich_text>
+    <rich_text> class TracksPageComponent implements OnInit, OnDestroy</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+		  tracksTrending</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>TrackModel&gt; = []</rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy"> ⇒ Inicializamos las listas que alojaran la data</rich_text>
+    <rich_text>
+		  tracksRandom</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>TrackModel&gt; = [] </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ Here</rich_text>
+    <rich_text>
+		  
+		  listObservers$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>Subscription&gt; = [] </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ La lista de observables para despues desubscribirnos</rich_text>
+    <rich_text>
+
+		  </rich_text>
+    <rich_text foreground="#ffdd00">ngOnInit()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> void </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+			const observer1$ = this.trackService.dataTracksTrending$
+			.subscribe</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">((</rich_text>
+    <rich_text>response</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> =&gt; </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ Aqui nos subscribimos y asignamos la respuesta</rich_text>
+    <rich_text>
+			  this.tracksTrending = response
+			  this.tracksRandom = response
+			</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">})</rich_text>
+    <rich_text>
+			this.listObservers$ = [observer1$]
+		  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+		  </rich_text>
+    <rich_text foreground="#ffdd00">ngOnDestroy()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> void </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+			this.listObservers$.forEach</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text> u =&gt; u.</rich_text>
+    <rich_text foreground="#ffdd00">unsubscribe()</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ Aqui lo destruimos</rich_text>
+    <rich_text>
+		  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+		  constructor</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>private trackService</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text>TrackService</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{}</rich_text>
+    <rich_text> </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">⇒ Importamos el servicio</rich_text>
+    <rich_text>
+
+		</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+	
+┣ services/
+┃ ┣ track.service.spec.ts
+┃ ┗ </rich_text>
+    <rich_text background="#e0e01b1b2424">track.service.ts</rich_text>
+    <rich_text>
+		
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> Injectable </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@angular/core'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> TrackModel </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'@core/models/track.models'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+		import </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> Observable, of </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text> from </rich_text>
+    <rich_text foreground="#3ad900">'rxjs'</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">;</rich_text>
+    <rich_text>
+		import * as dataRaw from </rich_text>
+    <rich_text foreground="#3ad900">'../../../data/tracks.json'</rich_text>
+    <rich_text>
+
+		@Injectable</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">({</rich_text>
+    <rich_text>
+		  providedIn</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#3ad900">'root'</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">})</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">export</rich_text>
+    <rich_text> class TrackService </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>
+		  dataTracksTrending$</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> Observable</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>Array</rich_text>
+    <rich_text foreground="#ffdd00">&lt;</rich_text>
+    <rich_text>TrackModel&gt;&gt; = of</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>[]</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text> ⇒ </rich_text>
+    <rich_text background="#e0e01b1b2424" weight="heavy">Aqui inicializamos el objeto observable que va a ser una lista de TrackModel</rich_text>
+    <rich_text> 
+		  </rich_text>
+    <rich_text foreground="#ffdd00">constructor()</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text> 
+			const </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">{</rich_text>
+    <rich_text>data</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}:</rich_text>
+    <rich_text> any = </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>dataRaw as any</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>.default
+			this.dataTracksTrending$ = of</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text>data</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>
+		  </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+		</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">}</rich_text>
+    <rich_text>
+
+┣ tracks-routing.module.ts
+┗ tracks.module.ts
+
+Cuando tenemos la data en un solo servicio podemos reactivamente enviar informacion cada que se agregue algo nuevo. De esta manera podriamos importar la data de una api y ya se propaga la informacion a donde la tengamos que enviar
+
+
+</rich_text>
+    <encoded_png char_offset="3089" justification="left" link="" sha256sum="f007f467ec6bf1f6dc87ec93b459ee88383779c2793a2306b9b69da7c557f6fe"/>
+  </node>
+</cherrytree>

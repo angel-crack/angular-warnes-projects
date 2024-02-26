@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-  <node name="NOTES" unique_id="43" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="11" is_bold="0" foreground="" ts_creation="1707069978" ts_lastsave="1708909658">
+  <node name="NOTES" unique_id="43" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="11" is_bold="0" foreground="" ts_creation="1707069978" ts_lastsave="1708901030">
     <rich_text>[+] Check ionic:
 </rich_text>
     <rich_text link="webs https://ionicframework.com/docs/">https://ionicframework.com/docs/</rich_text>
@@ -28,7 +28,7 @@
 </rich_text>
     <rich_text link="webs https://www.learnrxjs.io/">https://www.learnrxjs.io/</rich_text>
     <rich_text>
+
 </rich_text>
-    <rich_text link="webs https://www.learnrxjs.io/learn-rxjs/operators/transformation/map">https://www.learnrxjs.io/learn-rxjs/operators/transformation/map</rich_text>
   </node>
 </cherrytree>
