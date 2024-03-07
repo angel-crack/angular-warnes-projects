@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="28. Testing" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1709747024" ts_lastsave="1709747117">
+    <rich_text>Es uno de los pilares de Angular.
+
+[+] Estan basados en Karma y Jasmine
+
+Karma ⇒ Runner, es el que </rich_text>
+  </node>
+</cherrytree>

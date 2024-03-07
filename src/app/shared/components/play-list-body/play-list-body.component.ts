@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import * as dataRaw from '../../../data/tracks.json'
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { TrackModel } from '@core/models/track.models';
+import { TrackService } from '@modules/tracks/services/track.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-play-list-body',
@@ -8,11 +9,13 @@ import { TrackModel } from '@core/models/track.models';
   styleUrls: ['./play-list-body.component.css']
 })
 export class PlayListBodyComponent implements OnInit {
-  tracks: Array<TrackModel> = []
+  @Input() tracks: Array<TrackModel> = []
+
+
+  constructor() {}
 
   ngOnInit(): void {
-    const { data } : any = (dataRaw as any).default
-    this.tracks = data
+    
   }
 
 }

@@ -24,7 +24,7 @@ ngOnInit(): void {
 }
 
 sendPlay(track: TrackModel) {
-  this.multimediaService.callback.emit(track)
+  this.multimediaService.trackInfo$.next(track)
 }
 
 }

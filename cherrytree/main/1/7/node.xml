@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="06. Crear Modulos" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1707067077" ts_lastsave="1707344545">
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Podemos utilizar el commando ng generate module </rich_text>
+    <rich_text>
+
+12:18:42 &gt; ng g m --help
+ng g module [name]
+
+Creates a new, generic NgModule definition in the given project.
+
+Arguments:
+  name  The name of the NgModule.                                                                               [string]
+Options:
+      --help           Shows a help message for this command in the console.                                   [boolean]
+      --interactive    Enable interactive input prompts.                                       [boolean] [default: true]
+      --dry-run        Run through and reports activity without writing out results.          [boolean] [default: false]
+      --defaults       Disable interactive input prompts for options with a default.          [boolean] [default: false]
+      --force          Force overwriting of existing files.                                   [boolean] [default: false]
+      --flat           Create the new files at the top level of the current project root.     [boolean] [default: false]
+  -m, --module         The declaring NgModule.                                                                  [string]
+      --project        The name of the project.                                                                 [string]
+      --route          The route path for a lazy-loaded module. When supplied, creates a component in the new module,
+                       and adds the route to that component in the `Routes` array declared in the module provided in the
+                       `--module` option.                                                                       [string]
+      --routing        Create a routing module.                                               [boolean] [default: false]
+      --routing-scope  The scope for the new routing module.      [string] [choices: "Child", "Root"] [default: "Child"]
+      
+</rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Corremos el commando</rich_text>
+    <rich_text>
+
+12:19:05 &gt; ng g m Modules/Auth --routing
+CREATE src/app/Modules/auth/auth-routing.module.ts (247 bytes)
+CREATE src/app/Modules/auth/auth.module.ts (272 bytes)
+
+⇒ Va a crear dos archivos en la carpeta Modules/Auth
+app/
+┣ core/
+┣ data/
+┃ ┗ tracks.json
+┣ modules/
+┃ ┗ auth/
+</rich_text>
+    <rich_text background="#f8f8e4e45c5c" foreground="#5e5e5c5c6464" weight="heavy">┃   ┣ auth-routing.module.ts
+┃   ┗ auth.module.ts</rich_text>
+    <rich_text>
+┣ shared/
+┣ app-routing.module.ts
+┣ app.component.css
+┣ app.component.html
+┣ app.component.spec.ts
+┣ app.component.ts
+┗ app.module.ts
+
+
+</rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Vamos a hacer lo mismo con History, Tracks, y Home:</rich_text>
+    <rich_text>
+
+modules/
+┣ </rich_text>
+    <rich_text background="#f9f9f0f06b6b" foreground="#5e5e5c5c6464">auth</rich_text>
+    <rich_text>/
+┃ ┣ auth-routing.module.ts
+┃ ┗ auth.module.ts
+┣ </rich_text>
+    <rich_text background="#f9f9f0f06b6b" foreground="#5e5e5c5c6464">history</rich_text>
+    <rich_text>/
+┃ ┣ history-routing.module.ts
+┃ ┗ history.module.ts
+┣ </rich_text>
+    <rich_text background="#f9f9f0f06b6b" foreground="#5e5e5c5c6464">home</rich_text>
+    <rich_text>/
+┃ ┣ home-routing.module.ts
+┃ ┗ home.module.ts
+┗ </rich_text>
+    <rich_text background="#f9f9f0f06b6b" foreground="#5e5e5c5c6464">tracks</rich_text>
+    <rich_text>/
+  ┣ tracks-routing.module.ts
+  ┗ tracks.module.ts
+  
+ </rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+ 
+ </rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Los componentes siempre van atachados a un modulo, siempre. Cuando se genera un componente el va a buscar el modulo padre mas cercano a la jerarquía en la que esta generandose el componente.</rich_text>
+    <rich_text>
+ 
+ </rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Vamos a crear el modulo shared en la carpeta shared, para evitar que se cree una carpeta ‘Shared' nos vamos a ayudar de la propiedad --flat</rich_text>
+    <rich_text>
+ 
+ ng g m shared/Shared --flat
+ 
+ 
+ Y nos crea:
+ 
+ app/
+┣ shared/
+┃ ┣ components/
+┃ ┗ shared.module.ts
+
+Dentro de la carpeta ‘components’ vamos a crear todos los components
+
+</rich_text>
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Creando los componentes MediaPlayer, HeaderUser &amp; SideBar</rich_text>
+    <rich_text>
+
+17:52:49 ❯ ng g c shared/components/SideBar
+CREATE src/app/shared/components/side-bar/side-bar.component.html (23 bytes)
+CREATE src/app/shared/components/side-bar/side-bar.component.spec.ts (567 bytes)
+CREATE src/app/shared/components/side-bar/side-bar.component.ts (209 bytes)
+CREATE src/app/shared/components/side-bar/side-bar.component.css (0 bytes)
+UPDATE src/app/shared/shared.module.ts (293 bytes)
+
+17:55:07 ❯ ng g c shared/components/MediaPlayer
+CREATE src/app/shared/components/media-player/media-player.component.html (27 bytes)
+CREATE src/app/shared/components/media-player/media-player.component.spec.ts (595 bytes)
+CREATE src/app/shared/components/media-player/media-player.component.ts (225 bytes)
+CREATE src/app/shared/components/media-player/media-player.component.css (0 bytes)
+UPDATE src/app/shared/shared.module.ts (408 bytes)
+
+
+17:55:31 ❯ ng g c shared/components/HeaderUser
+CREATE src/app/shared/components/header-user/header-user.component.html (26 bytes)
+CREATE src/app/shared/components/header-user/header-user.component.spec.ts (588 bytes)
+CREATE src/app/shared/components/header-user/header-user.component.ts (221 bytes)
+CREATE src/app/shared/components/header-user/header-user.component.css (0 bytes)
+UPDATE src/app/shared/shared.module.ts (519 bytes)
+
+shared/
+┣ components/
+┃ ┣ header-user/
+┃ ┃ ┣ header-user.component.css
+┃ ┃ ┣ header-user.component.html
+┃ ┃ ┣ header-user.component.spec.ts
+┃ ┃ ┗ header-user.component.ts
+┃ ┣ media-player/
+┃ ┃ ┣ media-player.component.css
+┃ ┃ ┣ media-player.component.html
+┃ ┃ ┣ media-player.component.spec.ts
+┃ ┃ ┗ media-player.component.ts
+┃ ┗ side-bar/
+┃   ┣ side-bar.component.css
+┃   ┣ side-bar.component.html
+┃   ┣ side-bar.component.spec.ts
+┃   ┗ side-bar.component.ts
+┗ shared.module.ts
+</rich_text>
+    <encoded_png char_offset="2667" justification="left" link="" sha256sum="f654904bc7798c363a1a0b52044c04ecd56d3c74f925588a6a9ae99a962d32b0"/>
+  </node>
+</cherrytree>

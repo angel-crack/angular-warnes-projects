@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="++" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1709751185" ts_lastsave="1709751212">
+    <rich_text>a=fmtp:101 0-15
+a=sendrecv
+a=maxptime:20
+a=bsoft: 1 image udptl t38
+
+Feb 28 2024 00:29:57.471 EST: //2357577/3E8D5D66AD0E/SIP/Msg/ccsipDisplayMsg:
+Sent:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKb69qm2208os8jfo9de50.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=54918503-1709098197449-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;
+Date: Wed, 28 Feb 2024 05:29:57 GMT
+Call-ID: BW002957449280224-975123709@10.1.6.111
+CSeq: 924348645 INVITE
+Allow-Events: telephone-event
+Server: Cisco-SIPGateway/IOS-17.3.5
+Session-ID: 00000000000000000000000000000000;remote=7cb071c114f451818b47e731a86f9504
+Content-Length: 0
+
+
+Feb 28 2024 00:29:57.500 EST: //-1/xxxxxxxxxxxx/SIP/Msg/ccsipDisplayMsg:
+Received:
+ACK sip:6163954699@66.202.192.175:5060 SIP/2.0
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKb69qm2208os8jfo9de50.1
+CSeq: 924348645 ACK
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=54918503-1709098197449-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;;tag=202AD0D-8D2
+Call-ID: BW002957449280224-975123709@10.1.6.111
+Max-Forwards: 9
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.353 EST: //-1/xxxxxxxxxxxx/SIP/Msg/ccsipDisplayMsg:
+Received:
+INVITE sip:6163954699@66.202.192.175:5060 SIP/2.0
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKhugjd61068b7ou8d47g0.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=527234863-1709098198336-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;
+Call-ID: BW002958336280224526017644@10.1.6.110
+CSeq: 924349089 INVITE
+Contact: &lt;sip:209.142.200.14:5060;transport=udp&gt;
+P-Asserted-Identity: "MAXIMUS"&lt;sip:+14432762072@10.1.6.110;user=phone&gt;
+Privacy: none
+History-Info: &lt;sip:6165885050@10.1.6.110:5060;user=phone?Reason=Diversion%3btext%3d%22unknown%22&gt;;index=1,&lt;sip:6163954699@10.16.1.16&gt;;index=1.1
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY,UPDATE
+Recv-Info: x-broadworks-client-session-info
+X-BroadWorks-Correlation-Info: 6659115:3
+Accept: application/media_control+xml,application/pidf+xml,application/sdp,multipart/mixed
+Supported: 100rel
+Max-Forwards: 9
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 298
+
+v=0
+o=BroadWorks 288165241 1 IN IP4 209.142.200.14
+s=-
+c=IN IP4 209.142.200.14
+t=0 0
+m=audio 54122 RTP/AVP 0 18 9 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=rtpmap:9 G722/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=maxptime:20
+a=bsoft: 1 image udptl t38
+
+Feb 28 2024 00:29:58.362 EST: //2357579/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Sent:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKhugjd61068b7ou8d47g0.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=527234863-1709098198336-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: BW002958336280224526017644@10.1.6.110
+CSeq: 924349089 INVITE
+Allow-Events: telephone-event
+Server: Cisco-SIPGateway/IOS-17.3.5
+Session-ID: 00000000000000000000000000000000;remote=819824cddb4a5ee5bf2e272a6bc0c667
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.363 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.1.125.21 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK489812648
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B075-2250
+To: &lt;sip:6163954699@10.1.125.21&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1058361847-3576762862-2903871039-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 101 INVITE
+Timestamp: 1709098198
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 819824cddb4a5ee5bf2e272a6bc0c667;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 6713 2871 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18660 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:58.365 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK489812648
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B075-2250
+To: &lt;sip:6163954699@10.1.125.21&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+CSeq: 101 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.366 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK489812648
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B075-2250
+To: &lt;sip:6163954699@10.1.125.21&gt;;tag=5482320~617afa98-5359-4af0-afdb-e8c146859cf2-37923071
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+CSeq: 101 INVITE
+Allow-Events: presence
+Reason: Q.850;cause=1
+Server: Cisco-CUCM14.0
+Session-ID: 00000000000000000000000000000000;remote=819824cddb4a5ee5bf2e272a6bc0c667
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.368 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Sent:
+ACK sip:6163954699@10.1.125.21 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK489812648
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B075-2250
+To: &lt;sip:6163954699@10.1.125.21&gt;;tag=5482320~617afa98-5359-4af0-afdb-e8c146859cf2-37923071
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+Max-Forwards: 70
+CSeq: 101 ACK
+Allow-Events: kpml, telephone-event
+Session-ID: 819824cddb4a5ee5bf2e272a6bc0c667;remote=00000000000000000000000000000000
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.368 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.1.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48982A8E
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B07B-211C
+To: &lt;sip:6163954699@10.1.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1058361847-3576762862-2903871039-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 102 INVITE
+Timestamp: 1709098198
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 819824cddb4a5ee5bf2e272a6bc0c667;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 6713 2871 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18660 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:58.370 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48982A8E
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B07B-211C
+To: &lt;sip:6163954699@10.1.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+CSeq: 102 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.372 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48982A8E
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B07B-211C
+To: &lt;sip:6163954699@10.1.125.20&gt;;tag=163733~617afa98-5359-4af0-afdb-e8c146859cf2-21111443
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+CSeq: 102 INVITE
+Allow-Events: presence
+Reason: Q.850;cause=1
+Server: Cisco-CUCM14.0
+Session-ID: 00000000000000000000000000000000;remote=819824cddb4a5ee5bf2e272a6bc0c667
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.374 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Sent:
+ACK sip:6163954699@10.1.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48982A8E
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B07B-211C
+To: &lt;sip:6163954699@10.1.125.20&gt;;tag=163733~617afa98-5359-4af0-afdb-e8c146859cf2-21111443
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+Max-Forwards: 70
+CSeq: 102 ACK
+Allow-Events: kpml, telephone-event
+Session-ID: 819824cddb4a5ee5bf2e272a6bc0c667;remote=00000000000000000000000000000000
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.374 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.33.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898320F3
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B081-12EB
+To: &lt;sip:6163954699@10.33.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1058361847-3576762862-2903871039-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 103 INVITE
+Timestamp: 1709098198
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 819824cddb4a5ee5bf2e272a6bc0c667;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 6713 2871 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18660 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:58.377 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898320F3
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B081-12EB
+To: &lt;sip:6163954699@10.33.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+CSeq: 103 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.378 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898320F3
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B081-12EB
+To: &lt;sip:6163954699@10.33.125.20&gt;;tag=5757749~617afa98-5359-4af0-afdb-e8c146859cf2-54734747
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+CSeq: 103 INVITE
+Allow-Events: presence
+Reason: Q.850;cause=1
+Server: Cisco-CUCM14.0
+Session-ID: 00000000000000000000000000000000;remote=819824cddb4a5ee5bf2e272a6bc0c667
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.381 EST: //2357580/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Sent:
+ACK sip:6163954699@10.33.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898320F3
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B081-12EB
+To: &lt;sip:6163954699@10.33.125.20&gt;;tag=5757749~617afa98-5359-4af0-afdb-e8c146859cf2-54734747
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F163C33-D53111EE-AD1B8E3F-57C6E00F@10.1.126.5
+Max-Forwards: 70
+CSeq: 103 ACK
+Allow-Events: kpml, telephone-event
+Session-ID: 819824cddb4a5ee5bf2e272a6bc0c667;remote=00000000000000000000000000000000
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.382 EST: //2357579/3F1551F7AD15/SIP/Msg/ccsipDisplayMsg:
+Sent:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKhugjd61068b7ou8d47g0.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=527234863-1709098198336-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;;tag=202B089-A40
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: BW002958336280224526017644@10.1.6.110
+CSeq: 924349089 INVITE
+Warning: 399 66.202.192.175 "No matching outgoing dial-peer"
+Reason: Q.850;cause=1
+Allow-Events: presence
+Session-ID: 00000000000000000000000000000000;remote=819824cddb4a5ee5bf2e272a6bc0c667
+Server: Cisco-CUCM14.0
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.394 EST: //-1/xxxxxxxxxxxx/SIP/Msg/ccsipDisplayMsg:
+Received:
+ACK sip:6163954699@66.202.192.175:5060 SIP/2.0
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKhugjd61068b7ou8d47g0.1
+CSeq: 924349089 ACK
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=527234863-1709098198336-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;;tag=202B089-A40
+Call-ID: BW002958336280224526017644@10.1.6.110
+Max-Forwards: 9
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.453 EST: //-1/xxxxxxxxxxxx/SIP/Msg/ccsipDisplayMsg:
+Received:
+INVITE sip:6163954699@66.202.192.175:5060 SIP/2.0
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKi6un1o108oiqk2grh2j0.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=1480182654-1709098198442-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;
+Call-ID: BW002958442280224-1594404634@10.1.6.110
+CSeq: 924349142 INVITE
+Contact: &lt;sip:209.142.200.14:5060;transport=udp&gt;
+P-Asserted-Identity: "MAXIMUS"&lt;sip:+14432762072@10.1.6.110;user=phone&gt;
+Privacy: none
+History-Info: &lt;sip:6165885050@10.1.6.110:5060;user=phone?Reason=Diversion%3btext%3d%22unknown%22&gt;;index=1,&lt;sip:6165885050@10.1.6.110:5060;user=phone?Reason=Diversion%3btext%3d%22unknown%22&gt;;index=1.1,&lt;sip:6163954699@10.16.1.16&gt;;index=1.1.1
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY,UPDATE
+Recv-Info: x-broadworks-client-session-info
+X-BroadWorks-Correlation-Info: 6659116:3
+Accept: application/media_control+xml,application/pidf+xml,application/sdp,multipart/mixed
+Supported: 100rel
+Max-Forwards: 9
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 274
+
+v=0
+o=BroadWorks 288165251 1 IN IP4 209.142.200.14
+s=-
+c=IN IP4 209.142.200.14
+t=0 0
+m=audio 54894 RTP/AVP 0 18 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=maxptime:20
+a=bsoft: 1 image udptl t38
+
+Feb 28 2024 00:29:58.462 EST: //2357581/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Sent:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKi6un1o108oiqk2grh2j0.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=1480182654-1709098198442-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: BW002958442280224-1594404634@10.1.6.110
+CSeq: 924349142 INVITE
+Allow-Events: telephone-event
+Server: Cisco-SIPGateway/IOS-17.3.5
+Session-ID: 00000000000000000000000000000000;remote=57699e49a103564d9c795b13ab35422f
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.463 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.1.125.21 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898421F7
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0D9-E3D
+To: &lt;sip:6163954699@10.1.125.21&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1059351786-3576762862-2904329791-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 101 INVITE
+Timestamp: 1709098198
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 57699e49a103564d9c795b13ab35422f;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 2465 6501 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18772 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:58.465 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898421F7
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0D9-E3D
+To: &lt;sip:6163954699@10.1.125.21&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+CSeq: 101 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.466 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898421F7
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0D9-E3D
+To: &lt;sip:6163954699@10.1.125.21&gt;;tag=5482321~617afa98-5359-4af0-afdb-e8c146859cf2-37923073
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+CSeq: 101 INVITE
+Allow-Events: presence
+Reason: Q.850;cause=1
+Server: Cisco-CUCM14.0
+Session-ID: 00000000000000000000000000000000;remote=57699e49a103564d9c795b13ab35422f
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.468 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Sent:
+ACK sip:6163954699@10.1.125.21 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898421F7
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0D9-E3D
+To: &lt;sip:6163954699@10.1.125.21&gt;;tag=5482321~617afa98-5359-4af0-afdb-e8c146859cf2-37923073
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+Max-Forwards: 70
+CSeq: 101 ACK
+Allow-Events: kpml, telephone-event
+Session-ID: 57699e49a103564d9c795b13ab35422f;remote=00000000000000000000000000000000
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.468 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.1.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898552A
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0DF-1D8E
+To: &lt;sip:6163954699@10.1.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1059351786-3576762862-2904329791-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 102 INVITE
+Timestamp: 1709098198
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 57699e49a103564d9c795b13ab35422f;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 2465 6501 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18772 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:58.470 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898552A
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0DF-1D8E
+To: &lt;sip:6163954699@10.1.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+CSeq: 102 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.471 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898552A
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0DF-1D8E
+To: &lt;sip:6163954699@10.1.125.20&gt;;tag=163734~617afa98-5359-4af0-afdb-e8c146859cf2-21111445
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+CSeq: 102 INVITE
+Allow-Events: presence
+Reason: Q.850;cause=1
+Server: Cisco-CUCM14.0
+Session-ID: 00000000000000000000000000000000;remote=57699e49a103564d9c795b13ab35422f
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.473 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Sent:
+ACK sip:6163954699@10.1.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898552A
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0DF-1D8E
+To: &lt;sip:6163954699@10.1.125.20&gt;;tag=163734~617afa98-5359-4af0-afdb-e8c146859cf2-21111445
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+Max-Forwards: 70
+CSeq: 102 ACK
+Allow-Events: kpml, telephone-event
+Session-ID: 57699e49a103564d9c795b13ab35422f;remote=00000000000000000000000000000000
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.473 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.33.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK489861700
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0E4-22BA
+To: &lt;sip:6163954699@10.33.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1059351786-3576762862-2904329791-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 103 INVITE
+Timestamp: 1709098198
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 57699e49a103564d9c795b13ab35422f;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 2465 6501 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18772 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:58.476 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK489861700
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0E4-22BA
+To: &lt;sip:6163954699@10.33.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+CSeq: 103 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.478 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK489861700
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0E4-22BA
+To: &lt;sip:6163954699@10.33.125.20&gt;;tag=5757750~617afa98-5359-4af0-afdb-e8c146859cf2-54734749
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+CSeq: 103 INVITE
+Allow-Events: presence
+Reason: Q.850;cause=1
+Server: Cisco-CUCM14.0
+Session-ID: 00000000000000000000000000000000;remote=57699e49a103564d9c795b13ab35422f
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.482 EST: //2357582/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Sent:
+ACK sip:6163954699@10.33.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK489861700
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B0E4-22BA
+To: &lt;sip:6163954699@10.33.125.20&gt;;tag=5757750~617afa98-5359-4af0-afdb-e8c146859cf2-54734749
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: 3F257E7C-D53111EE-AD228E3F-57C6E00F@10.1.126.5
+Max-Forwards: 70
+CSeq: 103 ACK
+Allow-Events: kpml, telephone-event
+Session-ID: 57699e49a103564d9c795b13ab35422f;remote=00000000000000000000000000000000
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.482 EST: //2357581/3F246CEAAD1C/SIP/Msg/ccsipDisplayMsg:
+Sent:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKi6un1o108oiqk2grh2j0.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=1480182654-1709098198442-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;;tag=202B0EE-1AC6
+Date: Wed, 28 Feb 2024 05:29:58 GMT
+Call-ID: BW002958442280224-1594404634@10.1.6.110
+CSeq: 924349142 INVITE
+Warning: 399 66.202.192.175 "No matching outgoing dial-peer"
+Reason: Q.850;cause=1
+Allow-Events: presence
+Session-ID: 00000000000000000000000000000000;remote=57699e49a103564d9c795b13ab35422f
+Server: Cisco-CUCM14.0
+Content-Length: 0
+
+
+Feb 28 2024 00:29:58.495 EST: //-1/xxxxxxxxxxxx/SIP/Msg/ccsipDisplayMsg:
+Received:
+ACK sip:6163954699@66.202.192.175:5060 SIP/2.0
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKi6un1o108oiqk2grh2j0.1
+CSeq: 924349142 ACK
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=1480182654-1709098198442-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;;tag=202B0EE-1AC6
+Call-ID: BW002958442280224-1594404634@10.1.6.110
+Max-Forwards: 9
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.094 EST: //-1/xxxxxxxxxxxx/SIP/Msg/ccsipDisplayMsg:
+Received:
+INVITE sip:6163954699@66.202.192.175:5060 SIP/2.0
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKlmu1s53028k50r27p8m0.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=157118435-1709098199080-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;
+Call-ID: BW002959080280224366293648@10.1.6.111
+CSeq: 924349461 INVITE
+Contact: &lt;sip:209.142.200.14:5060;transport=udp&gt;
+P-Asserted-Identity: "MAXIMUS"&lt;sip:+14432762072@10.1.6.111;user=phone&gt;
+Privacy: none
+
+Feb 28 2024 00:29:59.244 EST: //-1/xxxxxxxxxxxx/SIP/Msg/ccsipDisplayMsg:
+Received:
+ACK sip:6163954699@66.202.192.175:5060 SIP/2.0
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKm653ue3040h80bup1tl0.1
+CSeq: 924349509 ACK
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=957858567-1709098199176-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;;tag=202B3CA-1277
+Call-ID: BW002959176280224-295847524@10.1.6.111
+Max-Forwards: 9
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.877 EST: //-1/xxxxxxxxxxxx/SIP/Msg/ccsipDisplayMsg:
+Received:
+INVITE sip:6163954699@66.202.192.175:5060 SIP/2.0
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKv673tl30eogflncl5l80.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=876320874-1709098199866-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;
+Call-ID: BW00295986628022434059690@10.1.6.110
+CSeq: 924349854 INVITE
+Contact: &lt;sip:209.142.200.14:5060;transport=udp&gt;
+P-Asserted-Identity: "MAXIMUS"&lt;sip:+14432762072@10.1.6.110;user=phone&gt;
+Privacy: none
+History-Info: &lt;sip:6165885050@10.1.6.110:5060;user=phone?Reason=Diversion%3btext%3d%22unknown%22&gt;;index=1,&lt;sip:6163954699@10.16.1.16&gt;;index=1.1
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY,UPDATE
+Recv-Info: x-broadworks-client-session-info
+X-BroadWorks-Correlation-Info: 6659117:3
+Accept: application/media_control+xml,application/pidf+xml,application/sdp,multipart/mixed
+Supported: 100rel
+Max-Forwards: 9
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 298
+
+v=0
+o=BroadWorks 288165378 1 IN IP4 209.142.200.14
+s=-
+c=IN IP4 209.142.200.14
+t=0 0
+m=audio 64176 RTP/AVP 0 18 9 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=rtpmap:9 G722/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=maxptime:20
+a=bsoft: 1 image udptl t38
+
+Feb 28 2024 00:29:59.887 EST: //2357587/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Sent:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKv673tl30eogflncl5l80.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=876320874-1709098199866-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: BW00295986628022434059690@10.1.6.110
+CSeq: 924349854 INVITE
+Allow-Events: telephone-event
+Server: Cisco-SIPGateway/IOS-17.3.5
+Session-ID: 00000000000000000000000000000000;remote=4d2fffe124835a5591d4f9bbc7ce847e
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.887 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.1.125.21 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898D53C
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B66A-727
+To: &lt;sip:6163954699@10.1.125.21&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1073591679-3576762862-2905706047-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 101 INVITE
+Timestamp: 1709098199
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 4d2fffe124835a5591d4f9bbc7ce847e;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 9910 1816 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18754 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:59.889 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898D53C
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B66A-727
+To: &lt;sip:6163954699@10.1.125.21&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+CSeq: 101 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.890 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898D53C
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B66A-727
+To: &lt;sip:6163954699@10.1.125.21&gt;;tag=5482335~617afa98-5359-4af0-afdb-e8c146859cf2-37923079
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+CSeq: 101 INVITE
+Allow-Events: presence
+Reason: Q.850;cause=1
+Server: Cisco-CUCM14.0
+Session-ID: 00000000000000000000000000000000;remote=4d2fffe124835a5591d4f9bbc7ce847e
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.892 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Sent:
+ACK sip:6163954699@10.1.125.21 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898D53C
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B66A-727
+To: &lt;sip:6163954699@10.1.125.21&gt;;tag=5482335~617afa98-5359-4af0-afdb-e8c146859cf2-37923079
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+Max-Forwards: 70
+CSeq: 101 ACK
+Allow-Events: kpml, telephone-event
+Session-ID: 4d2fffe124835a5591d4f9bbc7ce847e;remote=00000000000000000000000000000000
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.893 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.1.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898E2485
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B66F-9FA
+To: &lt;sip:6163954699@10.1.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1073591679-3576762862-2905706047-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 102 INVITE
+Timestamp: 1709098199
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 4d2fffe124835a5591d4f9bbc7ce847e;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 9910 1816 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18754 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:59.895 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898E2485
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B66F-9FA
+To: &lt;sip:6163954699@10.1.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+CSeq: 102 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.896 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898E2485
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B66F-9FA
+To: &lt;sip:6163954699@10.1.125.20&gt;;tag=163737~617afa98-5359-4af0-afdb-e8c146859cf2-21111451
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+CSeq: 102 INVITE
+Allow-Events: presence
+Reason: Q.850;cause=1
+Server: Cisco-CUCM14.0
+Session-ID: 00000000000000000000000000000000;remote=4d2fffe124835a5591d4f9bbc7ce847e
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.898 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Sent:
+ACK sip:6163954699@10.1.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898E2485
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B66F-9FA
+To: &lt;sip:6163954699@10.1.125.20&gt;;tag=163737~617afa98-5359-4af0-afdb-e8c146859cf2-21111451
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+Max-Forwards: 70
+CSeq: 102 ACK
+Allow-Events: kpml, telephone-event
+Session-ID: 4d2fffe124835a5591d4f9bbc7ce847e;remote=00000000000000000000000000000000
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.898 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.33.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898FDDE
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B675-1826
+To: &lt;sip:6163954699@10.33.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1073591679-3576762862-2905706047-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 103 INVITE
+Timestamp: 1709098199
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 4d2fffe124835a5591d4f9bbc7ce847e;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 9910 1816 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18754 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:59.901 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898FDDE
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B675-1826
+To: &lt;sip:6163954699@10.33.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+CSeq: 103 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.902 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898FDDE
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B675-1826
+To: &lt;sip:6163954699@10.33.125.20&gt;;tag=5757756~617afa98-5359-4af0-afdb-e8c146859cf2-54734755
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+CSeq: 103 INVITE
+Allow-Events: presence
+Reason: Q.850;cause=1
+Server: Cisco-CUCM14.0
+Session-ID: 00000000000000000000000000000000;remote=4d2fffe124835a5591d4f9bbc7ce847e
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.905 EST: //2357588/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Sent:
+ACK sip:6163954699@10.33.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK4898FDDE
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B675-1826
+To: &lt;sip:6163954699@10.33.125.20&gt;;tag=5757756~617afa98-5359-4af0-afdb-e8c146859cf2-54734755
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 3FFEEDCF-D53111EE-AD378E3F-57C6E00F@10.1.126.5
+Max-Forwards: 70
+CSeq: 103 ACK
+Allow-Events: kpml, telephone-event
+Session-ID: 4d2fffe124835a5591d4f9bbc7ce847e;remote=00000000000000000000000000000000
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.905 EST: //2357587/3FFDB57FAD31/SIP/Msg/ccsipDisplayMsg:
+Sent:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKv673tl30eogflncl5l80.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=876320874-1709098199866-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;;tag=202B67C-2457
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: BW00295986628022434059690@10.1.6.110
+CSeq: 924349854 INVITE
+Warning: 399 66.202.192.175 "No matching outgoing dial-peer"
+Reason: Q.850;cause=1
+Allow-Events: presence
+Session-ID: 00000000000000000000000000000000;remote=4d2fffe124835a5591d4f9bbc7ce847e
+Server: Cisco-CUCM14.0
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.918 EST: //-1/xxxxxxxxxxxx/SIP/Msg/ccsipDisplayMsg:
+Received:
+ACK sip:6163954699@66.202.192.175:5060 SIP/2.0
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bKv673tl30eogflncl5l80.1
+CSeq: 924349854 ACK
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=876320874-1709098199866-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;;tag=202B67C-2457
+Call-ID: BW00295986628022434059690@10.1.6.110
+Max-Forwards: 9
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.975 EST: //-1/xxxxxxxxxxxx/SIP/Msg/ccsipDisplayMsg:
+Received:
+INVITE sip:6163954699@66.202.192.175:5060 SIP/2.0
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bK1vqa3h001o0edc97u830.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=253341226-1709098199965-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;
+Call-ID: BW002959965280224258490820@10.1.6.110
+CSeq: 924349903 INVITE
+Contact: &lt;sip:209.142.200.14:5060;transport=udp&gt;
+P-Asserted-Identity: "MAXIMUS"&lt;sip:+14432762072@10.1.6.110;user=phone&gt;
+Privacy: none
+History-Info: &lt;sip:6165885050@10.1.6.110:5060;user=phone?Reason=Diversion%3btext%3d%22unknown%22&gt;;index=1,&lt;sip:6165885050@10.1.6.110:5060;user=phone?Reason=Diversion%3btext%3d%22unknown%22&gt;;index=1.1.1.1,&lt;sip:6163954699@10.16.1.16&gt;;index=1.1.1.1.1
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY,UPDATE
+Recv-Info: x-broadworks-client-session-info
+X-BroadWorks-Correlation-Info: 6659118:3
+Accept: application/media_control+xml,application/pidf+xml,application/sdp,multipart/mixed
+Supported: 100rel
+Max-Forwards: 9
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 274
+
+v=0
+o=BroadWorks 288165397 1 IN IP4 209.142.200.14
+s=-
+c=IN IP4 209.142.200.14
+t=0 0
+m=audio 57932 RTP/AVP 0 18 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=maxptime:20
+a=bsoft: 1 image udptl t38
+
+Feb 28 2024 00:29:59.984 EST: //2357589/400CD072AD38/SIP/Msg/ccsipDisplayMsg:
+Sent:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 209.142.200.14:5060;branch=z9hG4bK1vqa3h001o0edc97u830.1
+From: "MAXIMUS"&lt;sip:+14432762072@209.142.200.14:5060;user=phone&gt;;tag=253341226-1709098199965-
+To: "6163954699 6163954699"&lt;sip:6163954699@asmain.voip.telnetww.com:5060&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: BW002959965280224258490820@10.1.6.110
+CSeq: 924349903 INVITE
+Allow-Events: telephone-event
+Server: Cisco-SIPGateway/IOS-17.3.5
+Session-ID: 00000000000000000000000000000000;remote=3007e1ee9d5d54f29b5776c1f8db9b23
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.985 EST: //2357590/400CD072AD38/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.1.125.21 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48990149B
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B6CB-E25
+To: &lt;sip:6163954699@10.1.125.21&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 400DBAAE-D53111EE-AD3E8E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1074581618-3576762862-2906164799-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 101 INVITE
+Timestamp: 1709098199
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 3007e1ee9d5d54f29b5776c1f8db9b23;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 5706 8744 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18766 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:59.986 EST: //2357590/400CD072AD38/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48990149B
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B6CB-E25
+To: &lt;sip:6163954699@10.1.125.21&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 400DBAAE-D53111EE-AD3E8E3F-57C6E00F@10.1.126.5
+CSeq: 101 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.987 EST: //2357590/400CD072AD38/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48990149B
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B6CB-E25
+To: &lt;sip:6163954699@10.1.125.21&gt;;tag=5482337~617afa98-5359-4af0-afdb-e8c146859cf2-37923081
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 400DBAAE-D53111EE-AD3E8E3F-57C6E00F@10.1.126.5
+CSeq: 101 INVITE
+Allow-Events: presence
+Reason: Q.850;cause=1
+Server: Cisco-CUCM14.0
+Session-ID: 00000000000000000000000000000000;remote=3007e1ee9d5d54f29b5776c1f8db9b23
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.989 EST: //2357590/400CD072AD38/SIP/Msg/ccsipDisplayMsg:
+Sent:
+ACK sip:6163954699@10.1.125.21 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48990149B
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B6CB-E25
+To: &lt;sip:6163954699@10.1.125.21&gt;;tag=5482337~617afa98-5359-4af0-afdb-e8c146859cf2-37923081
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 400DBAAE-D53111EE-AD3E8E3F-57C6E00F@10.1.126.5
+Max-Forwards: 70
+CSeq: 101 ACK
+Allow-Events: kpml, telephone-event
+Session-ID: 3007e1ee9d5d54f29b5776c1f8db9b23;remote=00000000000000000000000000000000
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.990 EST: //2357590/400CD072AD38/SIP/Msg/ccsipDisplayMsg:
+Sent:
+INVITE sip:6163954699@10.1.125.20 SIP/2.0
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48991232E
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B6D1-72E
+To: &lt;sip:6163954699@10.1.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 400DBAAE-D53111EE-AD3E8E3F-57C6E00F@10.1.126.5
+Supported: 100rel,timer,resource-priority,replaces,sdp-anat
+Min-SE:  1800
+Cisco-Guid: 1074581618-3576762862-2906164799-1472651279
+User-Agent: Cisco-SIPGateway/IOS-17.3.5
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+CSeq: 102 INVITE
+Timestamp: 1709098199
+Contact: &lt;sip:14432762072@10.1.126.5:5060&gt;
+Call-Info: &lt;sip:10.1.126.5:5060&gt;;method="NOTIFY;Event=telephone-event;Duration=2000"
+Expires: 180
+Allow-Events: kpml, telephone-event
+Max-Forwards: 8
+P-Asserted-Identity: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;
+Session-ID: 3007e1ee9d5d54f29b5776c1f8db9b23;remote=00000000000000000000000000000000
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 288
+
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 5706 8744 IN IP4 10.1.126.5
+s=SIP Call
+c=IN IP4 10.1.126.5
+t=0 0
+m=audio 18766 RTP/AVP 0 18 101
+c=IN IP4 10.1.126.5
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+
+Feb 28 2024 00:29:59.992 EST: //2357590/400CD072AD38/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48991232E
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B6D1-72E
+To: &lt;sip:6163954699@10.1.125.20&gt;
+Date: Wed, 28 Feb 2024 05:29:59 GMT
+Call-ID: 400DBAAE-D53111EE-AD3E8E3F-57C6E00F@10.1.126.5
+CSeq: 102 INVITE
+Allow-Events: presence
+Content-Length: 0
+
+
+Feb 28 2024 00:29:59.993 EST: //2357590/400CD072AD38/SIP/Msg/ccsipDisplayMsg:
+Received:
+SIP/2.0 404 Not Found
+Via: SIP/2.0/UDP 10.1.126.5:5060;branch=z9hG4bK48991232E
+From: "MAXIMUS" &lt;sip:14432762072@10.1.126.5&gt;;tag=202B6D1-72E
+To: &lt;sip:6163954699@10.1.125.20&gt;;tag=163738~617afa98-5
+--- truncated due to size limitation ---</rich_text>
+  </node>
+</cherrytree>

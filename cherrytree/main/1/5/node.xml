@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="04. Scaffold" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1707065163" ts_lastsave="1707344494">
+    <rich_text background="#ffffffffffff" foreground="#3d3d38384646" weight="heavy">[+] Creamos las siguientes carpetas</rich_text>
+    <rich_text weight="heavy"> </rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+
+app/
+</rich_text>
+    <rich_text background="#5e5e5c5c6464">┣ core/</rich_text>
+    <rich_text> </rich_text>
+    <rich_text background="#eded33333b3b">⇒ Recursos y clases que no se necesiten importar en un modulo</rich_text>
+    <rich_text>
+┣ data/
+</rich_text>
+    <rich_text background="#5e5e5c5c6464">┣ modules/</rich_text>
+    <rich_text> </rich_text>
+    <rich_text background="#eded33333b3b">⇒ Los modulos que vamos a crear</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text background="#5e5e5c5c6464">┣ shared/</rich_text>
+    <rich_text> </rich_text>
+    <rich_text background="#eded33333b3b">⇒ Recursos que se van a compartir entre modulos</rich_text>
+    <rich_text>
+┣ app-routing.module.ts
+┣ app.component.css
+┣ app.component.html
+┣ app.component.spec.ts
+┣ app.component.ts
+┗ app.module.ts</rich_text>
+    <encoded_png char_offset="36" justification="left" anchor="Structure"/>
+  </node>
+</cherrytree>

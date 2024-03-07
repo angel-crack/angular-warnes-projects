@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.development';
 
@@ -8,7 +9,7 @@ import { environment } from 'src/environments/environment.development';
 })
 export class AuthService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient, private cookieService:CookieService) { }
   private readonly URL = environment.api
   sendCredentials(email: string , password: string): Observable<any> {
     // console.log('its working the service',email,password)

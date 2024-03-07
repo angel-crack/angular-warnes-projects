@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="NOTES" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="11" is_bold="0" foreground="" ts_creation="1707069978" ts_lastsave="1709247621">
+    <rich_text>[+] Check ionic:
+</rich_text>
+    <rich_text link="webs https://ionicframework.com/docs/">https://ionicframework.com/docs/</rich_text>
+    <rich_text>
+
+[+] repasar bastante el tema de pipes
+</rich_text>
+    <rich_text link="webs https://www.udemy.com/course/angular-principiantes-leifer-mendez/learn/lecture/28818636#overview">https://www.udemy.com/course/angular-principiantes-leifer-mendez/learn/lecture/28818636#overview</rich_text>
+    <rich_text>
+
+[+] Eventos de los atributos HTML
+</rich_text>
+    <rich_text link="webs https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/error_event">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/error_event</rich_text>
+    <rich_text>
+
+[+] Validators de angular
+</rich_text>
+    <rich_text link="webs https://angular.io/api/forms/Validators">https://angular.io/api/forms/Validators</rich_text>
+    <rich_text>
+
+[+] Programacion Reactiva
+</rich_text>
+    <rich_text link="webs https://osmancea.medium.com/programaci%C3%B3n-reactiva-con-rxjs-bebc9432485f">https://osmancea.medium.com/programaci%C3%B3n-reactiva-con-rxjs-bebc9432485f</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text link="webs https://www.learnrxjs.io/">https://www.learnrxjs.io/</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text link="webs https://www.learnrxjs.io/learn-rxjs/operators/transformation/map">https://www.learnrxjs.io/learn-rxjs/operators/transformation/map</rich_text>
+    <rich_text>
+
+[+] Cookies 
+</rich_text>
+    <rich_text link="webs https://www.npmjs.com/package/ngx-cookie-service">https://www.npmjs.com/package/ngx-cookie-service</rich_text>
+    <rich_text>
+
+[+] Verificar diferencias con guardianes entre angular versiones
+</rich_text>
+    <rich_text link="webs https://www.udemy.com/course/angular-principiantes-leifer-mendez/learn/lecture/28820228#overview">https://www.udemy.com/course/angular-principiantes-leifer-mendez/learn/lecture/28820228#overview</rich_text>
+    <rich_text>
+
+[+] Estudiar Interceptors</rich_text>
+  </node>
+</cherrytree>

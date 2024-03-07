@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="26. @Output" unique_id="29" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1709323860" ts_lastsave="1709324664">
+    <rich_text>[+] Si quisieramos enviar data de un hijo a un padre podemos utilizar el decorador Output, para ilustrarlo pensemos en:
+
+
+
+
+Queremos escrbir en el app-search y enviar la data al history page.
+
+Podemos hacer lo siguiente, en el search component:
+
+</rich_text>
+    <rich_text foreground="#f92672">export</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">class</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">SearchComponent</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  src</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text style="italic" foreground="#66d9ef">string</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#f92672">=</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#e6db74">''</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  @</rich_text>
+    <rich_text underline="single" foreground="#a6e22e">Output</rich_text>
+    <rich_text foreground="#f8f8f2">() </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">callbackData</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">EventEmitter</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;</rich_text>
+    <rich_text style="italic" foreground="#66d9ef">any</rich_text>
+    <rich_text foreground="#f8f8f2">&gt; </rich_text>
+    <rich_text foreground="#f92672">=</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#f92672">new</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">EventEmitter</rich_text>
+    <rich_text foreground="#f8f8f2">()</rich_text>
+    <rich_text> ⇒ Declaramos una funcion que emita un evento.
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text foreground="#a6e22e">callSearch</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text style="italic" foreground="#fd971f">term</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">string</rich_text>
+    <rich_text foreground="#f8f8f2">)</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text style="italic" foreground="#66d9ef">void</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text foreground="#f92672">if</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text style="italic" foreground="#fd971f">term</rich_text>
+    <rich_text foreground="#f8f8f2">.</rich_text>
+    <rich_text foreground="#66d9ef">length</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#f92672">&gt;=</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#ae81ff">3</rich_text>
+    <rich_text foreground="#f8f8f2">){</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">      console.</rich_text>
+    <rich_text foreground="#a6e22e">log</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text style="italic" foreground="#fd971f">term</rich_text>
+    <rich_text foreground="#f8f8f2">)</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    }</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  }</rich_text>
+    <rich_text>
+
+[+] Ahora en el padre cuando declaramos el hijo podemos llamar a esta funcion:
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;</rich_text>
+    <rich_text foreground="#f92672">div</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">class</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"history-page"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    &lt;</rich_text>
+    <rich_text foreground="#f92672">app-search</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">(callbackData)</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"</rich_text>
+    <rich_text foreground="#a6e22e">receiveData</rich_text>
+    <rich_text foreground="#f8f8f2">($event)</rich_text>
+    <rich_text foreground="#e6db74">"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;&lt;/</rich_text>
+    <rich_text foreground="#f92672">app-search</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    &lt;</rich_text>
+    <rich_text foreground="#f92672">app-play-list-body</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;&lt;/</rich_text>
+    <rich_text foreground="#f92672">app-play-list-body</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;/</rich_text>
+    <rich_text foreground="#f92672">div</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+
+Y en el componente del padre declaramos receiveData:
+
+</rich_text>
+    <rich_text foreground="#f92672">export</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">class</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">HistoryPageComponent</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text foreground="#a6e22e">receiveData</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text style="italic" foreground="#fd971f">data</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text style="italic" foreground="#66d9ef">string</rich_text>
+    <rich_text foreground="#f8f8f2">)</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text style="italic" foreground="#66d9ef">void</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    console.</rich_text>
+    <rich_text foreground="#a6e22e">log</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text foreground="#e6db74">'desde el padre 🔴🔴🔴'</rich_text>
+    <rich_text foreground="#f8f8f2">, </rich_text>
+    <rich_text style="italic" foreground="#fd971f">data</rich_text>
+    <rich_text foreground="#f8f8f2">)</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  }</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">}</rich_text>
+    <rich_text>
+
+[+] Para que se dispare el evento tenemos que emitirlo:
+
+
+
+
+
+
+
+
+
+</rich_text>
+    <encoded_png char_offset="121" justification="left" link="" sha256sum="0e81c947d2299a2c31903006af46958594787e658534c37ed9c588a7d3dfa784"/>
+  </node>
+</cherrytree>

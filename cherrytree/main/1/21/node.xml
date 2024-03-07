@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="20. Reactive Forms" unique_id="21" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1708700276" ts_lastsave="1708873136">
+    <rich_text>[+] Para poder crear un Formulario reactivo, primero debemos importar el formulario
+
+
+
+
+auth/
+┣ pages/
+┃ ┗ login-page/
+┃   ┣ login-page.component.css
+┃   ┣ login-page.component.html
+
+		&lt;form [formGroup]="formLogin" class=</rich_text>
+    <rich_text foreground="#3ad900">"login-auth-form"</rich_text>
+    <rich_text>&gt; </rich_text>
+    <rich_text scale="h3">⇒ En el formulario agregamos la propiedad con el nombre del formulario, este será el padre</rich_text>
+    <rich_text>
+            &lt;div class=</rich_text>
+    <rich_text foreground="#3ad900">"form-group"</rich_text>
+    <rich_text>&gt;
+                &lt;label for=</rich_text>
+    <rich_text foreground="#3ad900">"email"</rich_text>
+    <rich_text>&gt;Dirección de correo o nombre de usuario&lt;/label&gt;
+                &lt;input formControlName=</rich_text>
+    <rich_text foreground="#3ad900">"email"</rich_text>
+    <rich_text> type=</rich_text>
+    <rich_text foreground="#3ad900">"text"</rich_text>
+    <rich_text> placeholder=</rich_text>
+    <rich_text foreground="#3ad900">"Dirección de correo o nombre de usuario"</rich_text>
+    <rich_text> class=</rich_text>
+    <rich_text foreground="#3ad900">"form-input"</rich_text>
+    <rich_text>&gt;
+            	</rich_text>
+    <rich_text scale="h3"> Y a cada input le asiganmos un formControlName, esto va a hacer que el input tenga control </rich_text>
+    <rich_text>
+               &lt;/div&gt;
+               &lt;div class=</rich_text>
+    <rich_text foreground="#3ad900">"form-group"</rich_text>
+    <rich_text>&gt;
+                &lt;label for=</rich_text>
+    <rich_text foreground="#3ad900">"password"</rich_text>
+    <rich_text>&gt;Contraseña&lt;/label&gt;
+                &lt;input formGroupName=</rich_text>
+    <rich_text foreground="#3ad900">"password"</rich_text>
+    <rich_text> type=</rich_text>
+    <rich_text foreground="#3ad900">"password"</rich_text>
+    <rich_text> placeholder=</rich_text>
+    <rich_text foreground="#3ad900">"Contraseña"</rich_text>
+    <rich_text> class=</rich_text>
+    <rich_text foreground="#3ad900">"form-input"</rich_text>
+    <rich_text>&gt;
+				</rich_text>
+    <rich_text scale="h3">Y a cada input le asiganmos un formControlName, esto va a hacer que el input tenga control </rich_text>
+    <rich_text>
+            &lt;/div&gt;
+            &lt;div class=</rich_text>
+    <rich_text foreground="#3ad900">"form-steps"</rich_text>
+    <rich_text>&gt;
+                &lt;a class=</rich_text>
+    <rich_text foreground="#3ad900">"link"</rich_text>
+    <rich_text> href=</rich_text>
+    <rich_text foreground="#3ad900">""</rich_text>
+    <rich_text>&gt;¿Se te ha olvidado la contraseña?&lt;/a&gt;
+            &lt;/div&gt;
+            </rich_text>
+    <rich_text foreground="#0088ff">&lt;!-- &lt;div *ngIf="errorSession"&gt;
+                Ocurrio un error con tu email o password
+            &lt;/div&gt; --&gt;</rich_text>
+    <rich_text>
+            &lt;div class=</rich_text>
+    <rich_text foreground="#3ad900">"form-action"</rich_text>
+    <rich_text>&gt;
+                &lt;button class=</rich_text>
+    <rich_text foreground="#3ad900">"login social-btn"</rich_text>
+    <rich_text>&gt;Iniciar sesión&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+
+
+
+┃   ┣ login-page.component.spec.ts
+┃   ┗ login-page.component.ts
+			</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">export</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">class</rich_text>
+    <rich_text> LoginPageComponent </rich_text>
+    <rich_text weight="heavy">implements</rich_text>
+    <rich_text> OnInit {
+			  
+			  formLogin: FormGroup = </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">new</rich_text>
+    <rich_text> FormGroup({});
+			</rich_text>
+    <rich_text scale="h1">⇒ Declaramos formLogin como un FormGroup, automaticamente se importa, y lo inicializamos como un objeto nuevo de formGroup vacio</rich_text>
+    <rich_text>
+			  
+			  constructor() {}
+			  
+			  ngOnInit(): </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">void</rich_text>
+    <rich_text> {
+			  
+			</rich_text>
+    <rich_text scale="h1">⇒ En el ciclo de inicio, delcaramos los controles del formulario  </rich_text>
+    <rich_text>
+			  
+				</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">this</rich_text>
+    <rich_text>.formLogin = </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">new</rich_text>
+    <rich_text> FormGroup(
+				  {
+					email: </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">new</rich_text>
+    <rich_text> FormControl(</rich_text>
+    <rich_text foreground="#3ad900">''</rich_text>
+    <rich_text>),
+					password: </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">new</rich_text>
+    <rich_text> FormControl(</rich_text>
+    <rich_text foreground="#3ad900">''</rich_text>
+    <rich_text>)
+				  }
+				)
+			  }
+
+			}
+┣ auth-routing.module.ts
+┗ auth.module.ts
+
+
+</rich_text>
+    <rich_text scale="h4">[+] Validaciones</rich_text>
+    <rich_text>
+
+Para ir añadiendo validacions a cada uno de los inputs, lo que vamos a hacer es agregar un array de validators en la asignacion de los controles
+email</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">:</rich_text>
+    <rich_text> new FormControl</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">(</rich_text>
+    <rich_text foreground="#3ad900">''</rich_text>
+    <rich_text>, [
+          Validators.required, ⇒ HERE
+          Validators.email
+        ]</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">)</rich_text>
+    <rich_text>,
+
+
+Read more ⇒ </rich_text>
+    <rich_text link="webs https://angular.io/api/forms/Validators">https://angular.io/api/forms/Validators</rich_text>
+    <rich_text>
+
+[+] Es importante mencionar que cada vez que un input sea verdadera, es decir este validado, se va a añadir una clase al elemento input ⇒ ng-valid y si no lo es ng-invalid, y cuando todos los elementos de control sean validaos el formulario padre va a ser valido y se le va a añadir las mismas clases, adicional mente las clases ng-touched y ng-untouched cuando esten seleccionados o no.
+
+[+] Adicionalmente, creamos una funciona para recolectar la data:
+
+  sendLogin(): </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">void</rich_text>
+    <rich_text> {
+    </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">const</rich_text>
+    <rich_text> body = </rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">this</rich_text>
+    <rich_text>.formLogin.value;
+    console.</rich_text>
+    <rich_text foreground="#ff9d00" weight="heavy">log</rich_text>
+    <rich_text>(body)
+  }
+  
+  
+  y añadimos en el HTML FORM:
+  
+  &lt;form [ngSubmit]="sendLogin()" [formGroup]="formLogin" class=</rich_text>
+    <rich_text foreground="#3ad900">"login-auth-form"</rich_text>
+    <rich_text>&gt; 
+  
+  
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <encoded_png char_offset="3063" justification="left" link="" sha256sum="ca09818b5c3d45533d506f91ade0d1909559fde702c3094db3e770be9b71cccf"/>
+  </node>
+</cherrytree>

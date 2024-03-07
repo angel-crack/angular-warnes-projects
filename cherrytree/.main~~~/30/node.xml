@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="27. Music Service" unique_id="30" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1709590147" ts_lastsave="1709734218">
+    <rich_text>[+] En el servicio de multimedia.
+
+shared/
+┣ components/
+
+┣ services/
+┃ ┣ multimedia.service.spec.ts
+┃ ┗ multimedia.service.ts
+
+</rich_text>
+    <rich_text foreground="#f92672">export</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">class</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">MultimediaService</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text foreground="#f92672">public</rich_text>
+    <rich_text foreground="#f8f8f2"> trackInfo$</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">BehaviorSubject</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;</rich_text>
+    <rich_text style="italic" foreground="#66d9ef">any</rich_text>
+    <rich_text foreground="#f8f8f2">&gt; </rich_text>
+    <rich_text foreground="#f92672">=</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#f92672">new</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">BehaviorSubject</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text foreground="#ae81ff">undefined</rich_text>
+    <rich_text foreground="#f8f8f2">)</rich_text>
+    <rich_text> ⇒ Inicializamos el objeto como undefined
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text foreground="#f92672">public</rich_text>
+    <rich_text foreground="#f8f8f2"> audio</rich_text>
+    <rich_text foreground="#f92672">!:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">HTMLAudioElement</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">constructor</rich_text>
+    <rich_text foreground="#f8f8f2">() { }</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">}</rich_text>
+    <rich_text>
+
+
+
+En El card Player inyectamos el servicio y mandamos la info del track
+
+</rich_text>
+    <rich_text style="italic" foreground="#66d9ef">constructor</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text foreground="#f92672">private</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#fd971f">multimediaService</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text underline="single" foreground="#a6e22e">MultimediaService</rich_text>
+    <rich_text foreground="#f8f8f2">) {}</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#a6e22e">ngOnInit</rich_text>
+    <rich_text foreground="#f8f8f2">()</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">void</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">}</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#a6e22e">sendPlay</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text style="italic" foreground="#fd971f">track</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">TrackModel</rich_text>
+    <rich_text foreground="#f8f8f2">) {</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text foreground="#fd971f">this</rich_text>
+    <rich_text foreground="#f8f8f2">.multimediaService.trackInfo$.</rich_text>
+    <rich_text foreground="#a6e22e">next</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text style="italic" foreground="#fd971f">track</rich_text>
+    <rich_text foreground="#f8f8f2">)</rich_text>
+    <rich_text> ⇒ Como es un behavior subject podemos mandar la informacion con un next()
+
+Ya que este es un Observable que es Observer al mismo tiempo.
+</rich_text>
+    <rich_text foreground="#f8f8f2">}</rich_text>
+    <rich_text>
+
+
+Ya quedaría subscribirse en el media component para obtener el resultado:
+
+</rich_text>
+    <rich_text foreground="#f92672">export</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">class</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">MediaPlayerComponent</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#f92672">implements</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">OnInit</rich_text>
+    <rich_text foreground="#f8f8f2">{</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  mockCover</rich_text>
+    <rich_text foreground="#f92672">!:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">TrackModel</rich_text>
+    <rich_text>
+
+
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">constructor</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text foreground="#f92672">public</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#fd971f">multimediaService</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text underline="single" foreground="#a6e22e">MultimediaService</rich_text>
+    <rich_text foreground="#f8f8f2">){}</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  listObservers</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">Array</rich_text>
+    <rich_text foreground="#f8f8f2">&lt;</rich_text>
+    <rich_text underline="single" foreground="#a6e22e">Subscription</rich_text>
+    <rich_text foreground="#f8f8f2">&gt; </rich_text>
+    <rich_text foreground="#f92672">=</rich_text>
+    <rich_text foreground="#f8f8f2"> [];</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text foreground="#a6e22e">ngOnInit</rich_text>
+    <rich_text foreground="#f8f8f2">()</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">void</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    </rich_text>
+    <rich_text foreground="#fd971f">this</rich_text>
+    <rich_text foreground="#f8f8f2">.multimediaService.trackInfo$.</rich_text>
+    <rich_text foreground="#a6e22e">subscribe</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">      (</rich_text>
+    <rich_text style="italic" foreground="#fd971f">response</rich_text>
+    <rich_text foreground="#f8f8f2">) </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">=&gt;</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">        console.</rich_text>
+    <rich_text foreground="#a6e22e">log</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text foreground="#e6db74">'Sending Song ✔️✔️✔️'</rich_text>
+    <rich_text foreground="#f8f8f2">, </rich_text>
+    <rich_text style="italic" foreground="#fd971f">response</rich_text>
+    <rich_text foreground="#f8f8f2">)</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">      }</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">    )</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  }</rich_text>
+    <rich_text>
+
+
+
+=======
+
+Adicionalmente podemos hacer uso del Async Pipe para subscribirnos directamente desde la vista:
+
+
+</rich_text>
+    <rich_text scale="h2">Description</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h3" foreground="#5e5e5c5c6464">The </rich_text>
+    <rich_text family="monospace" scale="h3" foreground="#5e5e5c5c6464">async</rich_text>
+    <rich_text scale="h3" foreground="#5e5e5c5c6464"> pipe subscribes to an </rich_text>
+    <rich_text family="monospace" scale="h3" foreground="#5e5e5c5c6464">Observable</rich_text>
+    <rich_text scale="h3" foreground="#5e5e5c5c6464"> or </rich_text>
+    <rich_text family="monospace" scale="h3" foreground="#5e5e5c5c6464">Promise</rich_text>
+    <rich_text scale="h3" foreground="#5e5e5c5c6464"> and returns the latest value it has emitted. When a new value is emitted, the </rich_text>
+    <rich_text family="monospace" scale="h3" foreground="#5e5e5c5c6464">async</rich_text>
+    <rich_text scale="h3" foreground="#5e5e5c5c6464"> pipe marks the component to be checked for changes. When the component gets destroyed, the </rich_text>
+    <rich_text family="monospace" scale="h3" foreground="#5e5e5c5c6464">async</rich_text>
+    <rich_text scale="h3" foreground="#5e5e5c5c6464"> pipe unsubscribes automatically to avoid potential memory leaks. When the reference of the expression changes, the </rich_text>
+    <rich_text family="monospace" scale="h3" foreground="#5e5e5c5c6464">async</rich_text>
+    <rich_text scale="h3" foreground="#5e5e5c5c6464"> pipe automatically unsubscribes from the old </rich_text>
+    <rich_text family="monospace" scale="h3" foreground="#5e5e5c5c6464">Observable</rich_text>
+    <rich_text scale="h3" foreground="#5e5e5c5c6464"> or </rich_text>
+    <rich_text family="monospace" scale="h3" foreground="#5e5e5c5c6464">Promise</rich_text>
+    <rich_text scale="h3" foreground="#5e5e5c5c6464"> and subscribes to the new one.</rich_text>
+    <rich_text>
+
+Para poder hacer esto: 
+
+1. Borramos todo lo que teniamos y nos percatamos que el servicio esté importado como public, y a su vez el observable debe ser publico
+
+
+</rich_text>
+    <rich_text foreground="#f92672">export</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">class</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">MediaPlayerComponent</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#f92672">implements</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">OnInit</rich_text>
+    <rich_text foreground="#f8f8f2">{</rich_text>
+    <rich_text>
+
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">constructor</rich_text>
+    <rich_text foreground="#f8f8f2">(</rich_text>
+    <rich_text foreground="#f92672">public</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#fd971f">multimediaService</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text underline="single" foreground="#a6e22e">MultimediaService</rich_text>
+    <rich_text foreground="#f8f8f2">){}</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">  </rich_text>
+    <rich_text foreground="#a6e22e">ngOnInit</rich_text>
+    <rich_text foreground="#f8f8f2">()</rich_text>
+    <rich_text foreground="#f92672">:</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">void</rich_text>
+    <rich_text foreground="#f8f8f2"> {</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">  }</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">}</rich_text>
+    <rich_text>
+
+
+
+En el HTML hacemos uso:
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">    &lt;</rich_text>
+    <rich_text foreground="#f92672">div</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">class</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"artist-inside"</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">*ngIf</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"</rich_text>
+    <rich_text foreground="#f8f8f2">multimediaService.trackInfo$ </rich_text>
+    <rich_text foreground="#f92672">|</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">async</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text style="italic" foreground="#66d9ef">as</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text underline="single" foreground="#a6e22e">mockCover</rich_text>
+    <rich_text foreground="#e6db74">"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#f8f8f2">        &lt;</rich_text>
+    <rich_text foreground="#f92672">img</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">[src]</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"</rich_text>
+    <rich_text foreground="#f8f8f2">mockCover.cover</rich_text>
+    <rich_text foreground="#e6db74">"</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">alt</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">""</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">class</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"cover"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">        &lt;</rich_text>
+    <rich_text foreground="#f92672">div</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">class</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"track-info"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">            &lt;</rich_text>
+    <rich_text foreground="#f92672">h3</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">class</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"track-title"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;{{mockCover.name}}&lt;/</rich_text>
+    <rich_text foreground="#f92672">h3</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#f8f8f2">            &lt;</rich_text>
+    <rich_text foreground="#f92672">h5</rich_text>
+    <rich_text foreground="#f8f8f2"> </rich_text>
+    <rich_text foreground="#a6e22e">class</rich_text>
+    <rich_text foreground="#f8f8f2">=</rich_text>
+    <rich_text foreground="#e6db74">"track-title sub-title"</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;{{mockCover?.album}}&lt;/</rich_text>
+    <rich_text foreground="#f92672">h5</rich_text>
+    <rich_text foreground="#f8f8f2">&gt;</rich_text>
+    <rich_text>
+
+
+[+] En el card Player hacemos uso del next() para enviar el evento del Track seleccionado,
+
+Nos suscribimos en el mult
+</rich_text>
+  </node>
+</cherrytree>

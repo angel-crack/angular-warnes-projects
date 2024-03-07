@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node name="+++-" unique_id="28" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1709247621" ts_lastsave="1709248579">
+    <rich_text>[+] Invite Arriving to CUCM
+
+35557246.004 |10:11:54.489 |AppInfo  |SIPTcp - wait_SdlReadRsp: Incoming SIP TCP message from 10.141.12.71 on port 45173 index 31097 with 1173 bytes:
+[344703921,NET]
+INVITE sip:81104098@ucm.ucce.local;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.141.12.71:5060;branch=z9hG4bKuCcEZgRMauWkVIQkNup0uQ~~19970648
+Max-Forwards: 64
+To: &lt;sip:81104098@ucm.ucce.local;transport=tcp&gt;
+From: 5016902363 &lt;sip:5016902363@10.141.12.71:5060&gt;;tag=ds1398cf7
+Call-ID: 658803D8D58A11EE9283887984746058-170913671447767165@10.141.12.71
+CSeq: 1 INVITE
+Content-Length: 0
+Contact: &lt;sip:5016902363@10.141.12.71:5060;transport=tcp&gt;
+Expires: 16
+User-Agent: CVP 12.6 (1) ES-12 Build-54
+Date: Wed, 28 Feb 2024 16:08:08 GMT
+Min-SE: 1800
+Cisco-Guid: 1703412696-3582595566-2458093689-2222219352
+Allow: INVITE, OPTIONS, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY, INFO, REGISTER
+Allow-Events: telephone-event
+Session-ID: 7d716296f1345666ae0afcee8abf59f8;remote=00000000000000000000000000000000
+Content-Disposition: session;handling=required
+Cisco-Gucid: 658803D8D58A11EE9283887984746058
+Call-Info: &lt;urn:x-cisco-remotecc:callinfo&gt;;x-cisco-loc-name=JacksonDC_LOC;x-cisco-loc-id=b1bef52d-561d-aa0c-6a39-ef972e193b13;
+Supported: timer
+Supported: resource-priority
+Supported: replaces
+Supported: sdp-anat
+App-Info: &lt;10.141.12.71:7000:7443&gt;
+
+[+] The call is sent:
+
+86531306.001 |10:11:54.511 |AppInfo  |SIPTcp - wait_SdlSPISignal: Outgoing SIP TCP message to 10.141.12.54 on port 5060 index 27460 
+[190431223,NET]
+INVITE sip:8ad7377c-c131-8609-0bdf-22c7cf51c5d5@192.168.1.205:51977;transport=tls;orig-hostport=192.168.1.205:51977 SIP/2.0
+Via: SIP/2.0/TCP 10.141.12.62:5060;branch=z9hG4bK203114f2149ef5c
+From: "5016902363 " &lt;sip:5016902363@10.141.12.62&gt;;tag=52937457~d4369088-0f09-4407-9a08-7b93d30b6084-50364207
+To: &lt;sip:81104098@jdc-ucm-sub3-p.ucce.local&gt;
+Date: Wed, 28 Feb 2024 16:11:54 GMT
+Call-ID: 15644680-1ef1f457-99c38a-3e0c8d0a@10.141.12.62
+Supported: timer,resource-priority,replaces
+Min-SE:  1800
+User-Agent: Cisco-CUCM12.5
+Allow: INVITE, OPTIONS, INFO, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY
+CSeq: 101 INVITE
+Expires: 180
+Allow-Events: presence
+Call-Info: &lt;urn:x-cisco-remotecc:callinfo&gt;; security= Unknown; orientation= from; gci= 3-10982289; isVoip; call-instance= 1
+Send-Info: conference, x-cisco-conference
+Alert-Info: &lt;file://Bellcore-dr2/&gt;
+Route: &lt;sip:10.141.12.54:5060;transport=tcp;lr&gt;,&lt;sip:192.168.186.35:7001;transport=tls;lr&gt;,&lt;sip:24.243.96.54:51977;transport=tls;apparent;ds;lr&gt;
+Session-ID: 7d716296f1345666ae0afcee8abf59f8;remote=00000000000000000000000000000000
+Remote-Party-ID: "5016902363 " &lt;sip:5016902363@10.141.12.62;x-cisco-callback-number=5016902363&gt;;party=calling;screen=yes;privacy=off
+Contact: &lt;sip:5016902363@10.141.12.62:5060;transport=tcp&gt;
+Max-Forwards: 63
+Content-Length: 0
+
+
+[+] Ringing</rich_text>
+  </node>
+</cherrytree>
