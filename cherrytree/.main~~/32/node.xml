@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-  <node name="+++" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1709838184" ts_lastsave="1709838670">
+  <node name="+++" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1709838184" ts_lastsave="1709838625">
     <rich_text>[+] Incoming from 10.20.28.133
 
 
@@ -58,8 +58,6 @@ a=sendrecv
 |FullyQualifiedCalledPartyNumber=85533
 |DialingPatternRegularExpression=(85533)
 
-[+] Getting SO-Cluster-Trunk
-
-27047004.003 |12:43:43.332 |AppInfo  |SMDMSharedData::findLocalDevice - Name=SO-Cluster-Trunk Key=b4ac1b81-4d74-c4b4-7a90-a66d7144c829 isActvie=1 Pid=(5,181,1) found</rich_text>
+</rich_text>
   </node>
 </cherrytree>
